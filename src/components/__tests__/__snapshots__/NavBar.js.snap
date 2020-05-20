@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavBar /> renders correctly 1`] = `
+<Navbar
+  bg="light"
+  collapseOnSelect={false}
+  expand="lg"
+  variant="light"
+>
+  <NavbarBrand
+    href="/"
+  >
+    <FormattedMessage
+      defaultMessage="Eric Lee"
+      id="navbar.text"
+      values={Object {}}
+    />
+  </NavbarBrand>
+  <NavbarToggle
+    aria-controls="basic-navbar-nav"
+    label="Toggle navigation"
+  />
+</Navbar>
+`;

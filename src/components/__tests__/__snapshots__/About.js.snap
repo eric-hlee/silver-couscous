@@ -1,0 +1,629 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<About /> renders correctly 1`] = `
+<main>
+  <Tabs
+    defaultActiveKey="work-experience"
+    id="about_tabs"
+    mountOnEnter={false}
+    unmountOnExit={false}
+    variant="tabs"
+  >
+    <Tab
+      eventKey="work-experience"
+      title={
+        <FormattedMessage
+          defaultMessage="📃 Work Experience"
+          id="about.work_experience"
+          values={Object {}}
+        />
+      }
+    >
+      <WorkExperience
+        workDescriptions={
+          Object {
+            "conversocial": null,
+            "ibm": null,
+            "queensu": null,
+            "verv": null,
+          }
+        }
+      />
+    </Tab>
+    <Tab
+      eventKey="education"
+      title={
+        <FormattedMessage
+          defaultMessage="🎓 Education"
+          id="about.education"
+          values={Object {}}
+        />
+      }
+    >
+      <Education />
+    </Tab>
+    <Tab
+      eventKey="key-skills"
+      title={
+        <FormattedMessage
+          defaultMessage="🧰 Key Skills"
+          id="about.key_skills"
+          values={Object {}}
+        />
+      }
+    >
+      <KeySkills />
+    </Tab>
+  </Tabs>
+</main>
+`;
+
+exports[`<About /> should return data with a successful request 1`] = `
+<div>
+  <main>
+    <nav
+      class="nav nav-tabs"
+      role="tablist"
+    >
+      <a
+        aria-controls="about_tabs-tabpane-work-experience"
+        aria-selected="true"
+        class="nav-item nav-link active"
+        data-rb-event-key="work-experience"
+        href="#"
+        id="about_tabs-tab-work-experience"
+        role="tab"
+      >
+        📃 Work Experience
+      </a>
+      <a
+        aria-controls="about_tabs-tabpane-education"
+        aria-selected="false"
+        class="nav-item nav-link"
+        data-rb-event-key="education"
+        href="#"
+        id="about_tabs-tab-education"
+        role="tab"
+        tabindex="-1"
+      >
+        🎓 Education
+      </a>
+      <a
+        aria-controls="about_tabs-tabpane-key-skills"
+        aria-selected="false"
+        class="nav-item nav-link"
+        data-rb-event-key="key-skills"
+        href="#"
+        id="about_tabs-tab-key-skills"
+        role="tab"
+        tabindex="-1"
+      >
+        🧰 Key Skills
+      </a>
+    </nav>
+    <div
+      class="tab-content"
+    >
+      <div
+        aria-hidden="false"
+        aria-labelledby="about_tabs-tab-work-experience"
+        class="fade tab-pane active show"
+        id="about_tabs-tabpane-work-experience"
+        role="tabpanel"
+      >
+        <div
+          class="carousel slide"
+        >
+          <ol
+            class="carousel-indicators"
+          >
+            <li
+              class="active"
+            />
+            <li />
+            <li />
+            <li />
+          </ol>
+          <div
+            class="carousel-inner"
+          >
+            <div
+              class="active carousel-item"
+            >
+              <div
+                class="card"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="media"
+                  >
+                    <img
+                      alt="Conversocial logo"
+                      class="mr-3"
+                      height="64"
+                      src="test-file-stub"
+                      width="64"
+                    />
+                    <div
+                      class="media-body"
+                    >
+                      <div
+                        class="card-title h5"
+                      >
+                        <a
+                          class="card-link"
+                          href="http://www.conversocial.com/"
+                          target="_blank"
+                        >
+                          Conversocial
+                        </a>
+                      </div>
+                      <div
+                        class="mb-2 text-muted card-subtitle h6"
+                      >
+                        Junior Software Engineer
+                        <span
+                          class="info-item"
+                        >
+                          ·
+                        </span>
+                        May 2019 – Apr 2020
+                      </div>
+                      <div
+                        class="mb-2 text-muted card-subtitle h6"
+                      >
+                        London, United Kingdom
+                      </div>
+                      <div
+                        class="conversocial list-group list-group-flush"
+                      >
+                        <div
+                          class="list-group-item"
+                        >
+                          work
+                        </div>
+                        <div
+                          class="list-group-item"
+                        >
+                          work
+                        </div>
+                        <div
+                          class="list-group-item"
+                        >
+                          work
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="carousel-item"
+            >
+              <div
+                class="card"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="media"
+                  >
+                    <img
+                      alt="Verv logo"
+                      class="mr-3"
+                      height="64"
+                      src="test-file-stub"
+                      width="64"
+                    />
+                    <div
+                      class="media-body"
+                    >
+                      <div
+                        class="card-title h5"
+                      >
+                        <a
+                          class="card-link"
+                          href="http://verv.energy/"
+                          target="_blank"
+                        >
+                          Verv
+                        </a>
+                      </div>
+                      <div
+                        class="mb-2 text-muted card-subtitle h6"
+                      >
+                        Technical Support Engineer
+                        <span
+                          class="info-item"
+                        >
+                          ·
+                        </span>
+                        Oct 2018 – Apr 2019
+                      </div>
+                      <div
+                        class="mb-2 text-muted card-subtitle h6"
+                      >
+                        London, United Kingdom
+                      </div>
+                      <div
+                        class="verv list-group list-group-flush"
+                      >
+                        <div
+                          class="list-group-item"
+                        >
+                          work
+                        </div>
+                        <div
+                          class="list-group-item"
+                        >
+                          work
+                        </div>
+                        <div
+                          class="list-group-item"
+                        >
+                          work
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="carousel-item"
+            >
+              <div
+                class="card"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="media"
+                  >
+                    <img
+                      alt="IBM logo"
+                      class="mr-3"
+                      height="64"
+                      src="test-file-stub"
+                      width="64"
+                    />
+                    <div
+                      class="media-body"
+                    >
+                      <div
+                        class="card-title h5"
+                      >
+                        <a
+                          class="card-link"
+                          href="http://www.ibm.com/"
+                          target="_blank"
+                        >
+                          IBM
+                        </a>
+                      </div>
+                      <div
+                        class="mb-2 text-muted card-subtitle h6"
+                      >
+                        e-Commerce Java Development Support Intern
+                        <span
+                          class="info-item"
+                        >
+                          ·
+                        </span>
+                        May 2016 – Apr 2018
+                      </div>
+                      <div
+                        class="mb-2 text-muted card-subtitle h6"
+                      >
+                        Toronto, Canada
+                      </div>
+                      <div
+                        class="ibm list-group list-group-flush"
+                      >
+                        <div
+                          class="list-group-item"
+                        >
+                          work
+                        </div>
+                        <div
+                          class="list-group-item"
+                        >
+                          work
+                        </div>
+                        <div
+                          class="list-group-item"
+                        >
+                          work
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="carousel-item"
+            >
+              <div
+                class="card"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="media"
+                  >
+                    <img
+                      alt="Queen's University logo"
+                      class="mr-3"
+                      height="64"
+                      src="test-file-stub"
+                      width="64"
+                    />
+                    <div
+                      class="media-body"
+                    >
+                      <div
+                        class="card-title h5"
+                      >
+                        <a
+                          class="card-link"
+                          href="http://www.queensu.ca/"
+                          target="_blank"
+                        >
+                          Queen's University
+                        </a>
+                      </div>
+                      <div
+                        class="mb-2 text-muted card-subtitle h6"
+                      >
+                        Teaching Assistant
+                        <span
+                          class="info-item"
+                        >
+                          ·
+                        </span>
+                        Sep 2017 – Apr 2018
+                      </div>
+                      <div
+                        class="mb-2 text-muted card-subtitle h6"
+                      >
+                        Kingston, Ontario
+                      </div>
+                      <div
+                        class="queensu list-group list-group-flush"
+                      >
+                        <div
+                          class="list-group-item"
+                        >
+                          work
+                        </div>
+                        <div
+                          class="list-group-item"
+                        >
+                          work
+                        </div>
+                        <div
+                          class="list-group-item"
+                        >
+                          work
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        aria-labelledby="about_tabs-tab-education"
+        class="fade tab-pane"
+        id="about_tabs-tabpane-education"
+        role="tabpanel"
+      >
+        <div
+          class="card"
+        >
+          <a
+            class="card-link"
+            href="http://www.queensu.ca/"
+            target="_blank"
+          >
+            <img
+              class="card-img-top"
+              src="test-file-stub"
+            />
+          </a>
+          <div
+            class="card-body"
+          >
+            <div
+              class="card-title h5"
+            >
+              Queen's University
+            </div>
+            <p
+              class="card-text"
+            >
+              <strong>
+                Bachelor of Computing (Honours)
+              </strong>
+              <br />
+              Specialization in Software Design with Professional Internship
+              <br />
+              Dean’s Honour List 2017-18
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        aria-labelledby="about_tabs-tab-key-skills"
+        class="fade tab-pane"
+        id="about_tabs-tabpane-key-skills"
+        role="tabpanel"
+      >
+        <div
+          class="key-skills card"
+        >
+          <div
+            class="card-body"
+          >
+            <div
+              class="card-text"
+            >
+              <div
+                class="card-title h5"
+              >
+                Programming languages:
+              </div>
+              <div
+                class="list-group list-group-horizontal-sm"
+              >
+                <div
+                  class="list-group-item"
+                >
+                  Python
+                </div>
+                <div
+                  class="list-group-item"
+                >
+                  Java
+                </div>
+                <div
+                  class="list-group-item"
+                >
+                  Bash
+                </div>
+              </div>
+              <br />
+              <div
+                class="card-title h5"
+              >
+                Web/scripting languages:
+              </div>
+              <div
+                class="list-group list-group-horizontal-sm"
+              >
+                <div
+                  class="list-group-item"
+                >
+                  HTML
+                </div>
+                <div
+                  class="list-group-item"
+                >
+                  CSS
+                </div>
+                <div
+                  class="list-group-item"
+                >
+                  Sass
+                </div>
+                <div
+                  class="list-group-item"
+                >
+                  JavaScript
+                </div>
+                <div
+                  class="list-group-item"
+                >
+                  SQL
+                </div>
+              </div>
+              <br />
+              <div
+                class="card-title h5"
+              >
+                Library/Frameworks:
+              </div>
+              <div
+                class="list-group list-group-horizontal-sm"
+              >
+                <div
+                  class="list-group-item"
+                >
+                  ReactJS
+                </div>
+                <div
+                  class="list-group-item"
+                >
+                  Redux
+                </div>
+                <div
+                  class="list-group-item"
+                >
+                  React-Router
+                </div>
+                <div
+                  class="list-group-item"
+                >
+                  React Intl
+                </div>
+                <div
+                  class="list-group-item"
+                >
+                  ExpressJS
+                </div>
+                <div
+                  class="list-group-item"
+                >
+                  DraftJS
+                </div>
+                <div
+                  class="list-group-item"
+                >
+                  Jest
+                </div>
+                <div
+                  class="list-group-item"
+                >
+                  Enzyme
+                </div>
+              </div>
+              <br />
+              <div
+                class="card-title h5"
+              >
+                Other technologies:
+              </div>
+              <div
+                class="list-group list-group-horizontal-sm"
+              >
+                <div
+                  class="list-group-item"
+                >
+                  Docker
+                </div>
+                <div
+                  class="list-group-item"
+                >
+                  Git
+                </div>
+                <div
+                  class="list-group-item"
+                >
+                  GitHub
+                </div>
+                <div
+                  class="list-group-item"
+                >
+                  Webpack
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+`;

@@ -1,0 +1,287 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WorkExperience /> renders correctly 1`] = `
+<Carousel
+  controls={false}
+  defaultActiveIndex={0}
+  fade={false}
+  indicators={true}
+  interval={5000}
+  keyboard={true}
+  nextIcon={
+    <span
+      aria-hidden="true"
+      className="carousel-control-next-icon"
+    />
+  }
+  nextLabel="Next"
+  pause="hover"
+  prevIcon={
+    <span
+      aria-hidden="true"
+      className="carousel-control-prev-icon"
+    />
+  }
+  prevLabel="Previous"
+  slide={true}
+  touch={true}
+  wrap={true}
+>
+  <CarouselItem>
+    <Card
+      body={false}
+    >
+      <CardBody>
+        <Media>
+          <img
+            alt="Conversocial logo"
+            className="mr-3"
+            height={64}
+            src="test-file-stub"
+            width={64}
+          />
+          <MediaBody>
+            <CardTitle>
+              <CardLink
+                href="http://www.conversocial.com/"
+                target="_blank"
+              >
+                <FormattedMessage
+                  defaultMessage="Conversocial"
+                  id="work.conv"
+                  values={Object {}}
+                />
+              </CardLink>
+            </CardTitle>
+            <CardSubtitle
+              className="mb-2 text-muted"
+            >
+              <FormattedMessage
+                defaultMessage="Junior Software Engineer"
+                id="work.conv_jse"
+                values={Object {}}
+              />
+              <span
+                className="info-item"
+              >
+                ·
+              </span>
+              <FormattedMessage
+                defaultMessage="May 2019 – Apr 2020"
+                id="work.conv_work_period"
+                values={Object {}}
+              />
+            </CardSubtitle>
+            <CardSubtitle
+              className="mb-2 text-muted"
+            >
+              <FormattedMessage
+                defaultMessage="London, United Kingdom"
+                id="work.london_uk"
+                values={Object {}}
+              />
+            </CardSubtitle>
+            <ListGroup
+              className="conversocial"
+              horizontal={null}
+              variant="flush"
+            />
+          </MediaBody>
+        </Media>
+      </CardBody>
+    </Card>
+  </CarouselItem>
+  <CarouselItem>
+    <Card
+      body={false}
+    >
+      <CardBody>
+        <Media>
+          <img
+            alt="Verv logo"
+            className="mr-3"
+            height={64}
+            src="test-file-stub"
+            width={64}
+          />
+          <MediaBody>
+            <CardTitle>
+              <CardLink
+                href="http://verv.energy/"
+                target="_blank"
+              >
+                <FormattedMessage
+                  defaultMessage="Verv"
+                  id="work.verv"
+                  values={Object {}}
+                />
+              </CardLink>
+            </CardTitle>
+            <CardSubtitle
+              className="mb-2 text-muted"
+            >
+              <FormattedMessage
+                defaultMessage="Technical Support Engineer"
+                id="work.verv_tse"
+                values={Object {}}
+              />
+              <span
+                className="info-item"
+              >
+                ·
+              </span>
+              <FormattedMessage
+                defaultMessage="Oct 2018 – Apr 2019"
+                id="work.verv_work_period"
+                values={Object {}}
+              />
+            </CardSubtitle>
+            <CardSubtitle
+              className="mb-2 text-muted"
+            >
+              <FormattedMessage
+                defaultMessage="London, United Kingdom"
+                id="work.london_uk"
+                values={Object {}}
+              />
+            </CardSubtitle>
+            <ListGroup
+              className="verv"
+              horizontal={null}
+              variant="flush"
+            />
+          </MediaBody>
+        </Media>
+      </CardBody>
+    </Card>
+  </CarouselItem>
+  <CarouselItem>
+    <Card
+      body={false}
+    >
+      <CardBody>
+        <Media>
+          <img
+            alt="IBM logo"
+            className="mr-3"
+            height={64}
+            src="test-file-stub"
+            width={64}
+          />
+          <MediaBody>
+            <CardTitle>
+              <CardLink
+                href="http://www.ibm.com/"
+                target="_blank"
+              >
+                <FormattedMessage
+                  defaultMessage="IBM"
+                  id="work.ibm"
+                  values={Object {}}
+                />
+              </CardLink>
+            </CardTitle>
+            <CardSubtitle
+              className="mb-2 text-muted"
+            >
+              <FormattedMessage
+                defaultMessage="e-Commerce Java Development Support Intern"
+                id="work.ibm_intern"
+                values={Object {}}
+              />
+              <span
+                className="info-item"
+              >
+                ·
+              </span>
+              <FormattedMessage
+                defaultMessage="May 2016 – Apr 2018"
+                id="work.ibm_work_period"
+                values={Object {}}
+              />
+            </CardSubtitle>
+            <CardSubtitle
+              className="mb-2 text-muted"
+            >
+              <FormattedMessage
+                defaultMessage="Toronto, Canada"
+                id="work.toronto_ca"
+                values={Object {}}
+              />
+            </CardSubtitle>
+            <ListGroup
+              className="ibm"
+              horizontal={null}
+              variant="flush"
+            />
+          </MediaBody>
+        </Media>
+      </CardBody>
+    </Card>
+  </CarouselItem>
+  <CarouselItem>
+    <Card
+      body={false}
+    >
+      <CardBody>
+        <Media>
+          <img
+            alt="Queen's University logo"
+            className="mr-3"
+            height={64}
+            src="test-file-stub"
+            width={64}
+          />
+          <MediaBody>
+            <CardTitle>
+              <CardLink
+                href="http://www.queensu.ca/"
+                target="_blank"
+              >
+                <FormattedMessage
+                  defaultMessage="Queen's University"
+                  id="work.queensu"
+                  values={Object {}}
+                />
+              </CardLink>
+            </CardTitle>
+            <CardSubtitle
+              className="mb-2 text-muted"
+            >
+              <FormattedMessage
+                defaultMessage="Teaching Assistant"
+                id="work.queensu_ta"
+                values={Object {}}
+              />
+              <span
+                className="info-item"
+              >
+                ·
+              </span>
+              <FormattedMessage
+                defaultMessage="Sep 2017 – Apr 2018"
+                id="work.queensu_work_period"
+                values={Object {}}
+              />
+            </CardSubtitle>
+            <CardSubtitle
+              className="mb-2 text-muted"
+            >
+              <FormattedMessage
+                defaultMessage="Kingston, Ontario"
+                id="work.kingston_on"
+                values={Object {}}
+              />
+            </CardSubtitle>
+            <ListGroup
+              className="queensu"
+              horizontal={null}
+              variant="flush"
+            />
+          </MediaBody>
+        </Media>
+      </CardBody>
+    </Card>
+  </CarouselItem>
+</Carousel>
+`;

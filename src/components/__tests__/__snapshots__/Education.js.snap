@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Education /> renders correctly 1`] = `
+<Card
+  body={false}
+>
+  <CardLink
+    href="http://www.queensu.ca/"
+    target="_blank"
+  >
+    <CardImg
+      src="test-file-stub"
+      variant="top"
+    />
+  </CardLink>
+  <CardBody>
+    <CardTitle>
+      <FormattedMessage
+        defaultMessage="Queen's University"
+        id="education.queensu"
+        values={Object {}}
+      />
+    </CardTitle>
+    <CardText>
+      <strong>
+        <FormattedMessage
+          defaultMessage="Bachelor of Computing (Honours)"
+          id="education.degree"
+          values={Object {}}
+        />
+      </strong>
+      <br />
+      <FormattedMessage
+        defaultMessage="Specialization in Software Design with Professional Internship"
+        id="education.program"
+        values={Object {}}
+      />
+      <br />
+      <FormattedMessage
+        defaultMessage="Dean’s Honour List 2017-18"
+        id="education.deans_list"
+        values={Object {}}
+      />
+    </CardText>
+  </CardBody>
+</Card>
+`;

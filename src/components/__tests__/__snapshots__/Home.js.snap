@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> renders correctly 1`] = `
+<Fragment>
+  <main>
+    <header>
+      <Jumbotron
+        fluid={false}
+      >
+        <h1>
+          <FormattedMessage
+            defaultMessage="Hello!"
+            id="home.greeting"
+            values={Object {}}
+          />
+        </h1>
+        <p
+          className="white"
+        >
+          <FormattedMessage
+            defaultMessage="My name is Eric."
+            id="home.whoami"
+            values={Object {}}
+          />
+        </p>
+        <p>
+          <Button
+            active={false}
+            className="icon-download"
+            disabled={false}
+            href="http://localhost:9000/resume"
+            type="button"
+            variant="primary"
+          >
+            <FormattedMessage
+              defaultMessage="Resume"
+              id="home.resume"
+              values={Object {}}
+            />
+          </Button>
+        </p>
+      </Jumbotron>
+    </header>
+    <section>
+      <Container
+        fluid={true}
+      >
+        <Row
+          noGutters={false}
+        >
+          <Col
+            className="img-eric"
+          >
+            <Image
+              alt="Picture of Eric"
+              fluid={true}
+              height="180"
+              rounded={false}
+              roundedCircle={false}
+              src="test-file-stub"
+              thumbnail={false}
+              width="171"
+            />
+          </Col>
+          <Col>
+            <div
+              className="speech-bubble"
+            >
+              <p>
+                <strong>
+                  <FormattedMessage
+                    defaultMessage="🧑🏻‍💻 My life as a developer:"
+                    id="home.life_as_dev"
+                    values={Object {}}
+                  />
+                </strong>
+              </p>
+              <ul>
+                <li>
+                  <FormattedMessage
+                    defaultMessage="Started learning HTML at 10"
+                    id="home.life_as_dev_1"
+                    values={Object {}}
+                  />
+                </li>
+                <li>
+                  <FormattedMessage
+                    defaultMessage="Received an award for creating a website at 12"
+                    id="home.life_as_dev_2"
+                    values={Object {}}
+                  />
+                </li>
+                <li>
+                  <FormattedMessage
+                    defaultMessage="Studied computer science in university at 18"
+                    id="home.life_as_dev_3"
+                    values={Object {}}
+                  />
+                </li>
+                <li>
+                  <FormattedMessage
+                    defaultMessage="Completed an internship at 22"
+                    id="home.life_as_dev_4"
+                    values={Object {}}
+                  />
+                </li>
+                <li>
+                  <FormattedMessage
+                    defaultMessage="Kicked off career as a technical support engineer at 23"
+                    id="home.life_as_dev_5"
+                    values={Object {}}
+                  />
+                </li>
+                <li>
+                  <FormattedMessage
+                    defaultMessage="Joined a startup as a junior software engineer at 24"
+                    id="home.life_as_dev_6"
+                    values={Object {}}
+                  />
+                </li>
+                <li>
+                  <FormattedMessage
+                    defaultMessage="Got laid off due to Covid-19 and looking for new opportunities!"
+                    id="home.life_as_dev_7"
+                    values={Object {}}
+                  />
+                </li>
+              </ul>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+    <About />
+  </main>
+  <Footer />
+</Fragment>
+`;

@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> renders correctly 1`] = `
+<footer
+  className="footer"
+>
+  <p
+    className="icon-copyright"
+  >
+    2020 Eric Lee. Designed and built with
+     
+    <span
+      aria-label="love"
+      role="img"
+    >
+      ❤️
+    </span>
+    .
+  </p>
+  <a
+    href="http://www.linkedin.com/in/erichsuanlee"
+  >
+    <span
+      className="dot icon-linkedin"
+    />
+  </a>
+  <a
+    href="http://github.com/ericlee1995"
+  >
+    <span
+      className="dot icon-github"
+    />
+  </a>
+</footer>
+`;
