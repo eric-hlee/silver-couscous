@@ -5,28 +5,26 @@ import History from '../containers/ChatHistory'
 import Chat from '../containers/RenderChat'
 
 class Wireframe extends React.Component {
-
-  render() {
-
+  render () {
     const style_wireframe = {
       height: '100%',
       minHeight: '100%',
-      overflow: 'hidden',
+      overflow: 'hidden'
     }
 
     return (
       <div className="Wireframe" style={style_wireframe}>
         <AddChat title="An awesome chat app using Redux"></AddChat>
         <SplitPane
-            left={
-              <History />
-            }
-            right={
-              <Chat />
-            }
-          />
+          left={
+            <History />
+          }
+          right={
+            <Chat />
+          }
+        />
       </div>
-    );
+    )
   }
 }
 

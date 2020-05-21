@@ -8,7 +8,7 @@ const style_button = {
   float: 'right',
   boxShadow: '1px 2px',
   overflow: 'hidden',
-  cursor: 'pointer',
+  cursor: 'pointer'
 }
 
 const DeleteButton = ({ onClick }) => (

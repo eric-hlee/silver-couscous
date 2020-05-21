@@ -66,7 +66,7 @@ describe('actions', () => {
 
   it('should create an action to update the last user input', () => {
     const id = 0
-    const text = "sample_text"
+    const text = 'sample_text'
     const expectedAction = {
       type: types.UPDATE_LAST_INPUT,
       id,

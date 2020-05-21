@@ -2,7 +2,7 @@ import { connect } from 'react-redux'
 import { setActiveChat } from '../actions'
 import ChatCard from '../components/ChatCard'
 
-const mapStateToProps = (state) => state;
+const mapStateToProps = (state) => state
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {

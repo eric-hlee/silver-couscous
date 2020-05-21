@@ -5,8 +5,8 @@ import SentMessage from './SentMessage'
 describe('SentMessage', () => {
   it('should render self and subcomponents', () => {
     const wrapper = shallow(
-      <SentMessage key='0' 
-        date='Fri Jun 07 2019 10:28:01 GMT+0100 (British Summer Time)' 
+      <SentMessage key='0'
+        date='Fri Jun 07 2019 10:28:01 GMT+0100 (British Summer Time)'
         text='test'
       />
     )

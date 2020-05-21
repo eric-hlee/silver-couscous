@@ -15,7 +15,7 @@ describe('Chat', () => {
       ],
       messagesEnd: <div />
     }
-    Element.prototype.scrollIntoView = jest.fn();
+    Element.prototype.scrollIntoView = jest.fn()
     const wrapper = mount(<Chat {...props} />)
     expect(wrapper).toMatchSnapshot()
   })

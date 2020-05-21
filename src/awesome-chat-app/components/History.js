@@ -1,14 +1,11 @@
 import React from 'react'
 import SetActiveChat from '../containers/SetActiveChat'
 
-
 class History extends React.Component {
-
-  render() {
-
+  render () {
     const style_history = {
       height: '600px',
-      overflow: 'auto',
+      overflow: 'auto'
     }
 
     return (
@@ -24,7 +21,7 @@ class History extends React.Component {
           )}
         </div>
       </div>
-    );
+    )
   }
 }
 

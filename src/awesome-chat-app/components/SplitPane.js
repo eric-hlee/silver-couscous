@@ -1,17 +1,15 @@
 import React from 'react'
 
 class SplitPane extends React.Component {
-
-  render() {
-
+  render () {
     const style_splitPanel = {
       display: 'flex',
       flexDirection: 'row',
       height: '100%',
       border: '1px solid silver',
       overflow: 'hidden',
-      borderTop: '0',
-    };
+      borderTop: '0'
+    }
 
     const style_splitPaneLeft = {
       border: '1px solid #555555',
@@ -20,7 +18,7 @@ class SplitPane extends React.Component {
       width: '30%',
       minHeight: '500px',
       minWidth: '150px',
-      borderRight: '0',
+      borderRight: '0'
     }
 
     const style_splitPaneRight = {
@@ -31,7 +29,7 @@ class SplitPane extends React.Component {
       minHeight: 'auto',
       minWidth: '1024px',
       position: 'relative',
-      overflow:'auto',
+      overflow: 'auto'
     }
 
     return (
@@ -43,7 +41,7 @@ class SplitPane extends React.Component {
           {this.props.right}
         </div>
       </div>
-    );
+    )
   }
 }
 

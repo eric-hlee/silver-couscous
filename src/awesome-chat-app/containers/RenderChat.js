@@ -2,7 +2,7 @@ import { connect } from 'react-redux'
 import { sendMessage, replyMessage, updateLastInput, updateLastMessage } from '../actions'
 import Chat from '../components/Chat'
 
-const mapStateToProps = (state) => state;
+const mapStateToProps = (state) => state
 
 const mapDispatchToProps = (dispatch) => {
   return {
@@ -14,7 +14,6 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 const mergeProps = (propsFromState, propsFromDispatch) => {
-
   const activeChat = propsFromState.chatList.find((chat) => chat.id === propsFromState.activeChat)
 
   return {

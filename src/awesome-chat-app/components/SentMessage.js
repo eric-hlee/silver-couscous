@@ -1,12 +1,10 @@
 import React from 'react'
 
 class SentMessage extends React.Component {
-
-  render() {
-
+  render () {
     const style_messageBubbleGroup = {
       position: 'relative',
-      overflow: 'auto',
+      overflow: 'auto'
     }
 
     const style_sentMessageBubble = {
@@ -16,7 +14,7 @@ class SentMessage extends React.Component {
       borderRadius: '10px',
       padding: '15px',
       marginBottom: '15px',
-      float: 'right',
+      float: 'right'
     }
 
     const style_sentMessage = {
@@ -25,7 +23,7 @@ class SentMessage extends React.Component {
       fontSize: '16px'
     }
 
-    return(
+    return (
       <div className="MessageBubbleGroup" style={style_messageBubbleGroup}>
         <div className="SentMessageBubble" style={style_sentMessageBubble}>
           <div className="Date">
@@ -36,7 +34,7 @@ class SentMessage extends React.Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 

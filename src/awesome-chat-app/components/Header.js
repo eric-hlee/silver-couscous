@@ -1,18 +1,16 @@
 import React from 'react'
 
 class Header extends React.Component {
-
-  render() {
-
+  render () {
     const style_header = {
       border: '1px solid black',
-      borderBottom: '0',
+      borderBottom: '0'
     }
 
     const style_headline = {
       textAlign: 'center',
-      marginTop: '0.5rem',
-    };
+      marginTop: '0.5rem'
+    }
 
     const style_addChatButton = {
       border: '1px solid #555555',
@@ -20,8 +18,8 @@ class Header extends React.Component {
       borderRadius: '12px',
       margin: '0px 0px 10px 10px',
       fontSize: '16px',
-      cursor: 'pointer',
-    };
+      cursor: 'pointer'
+    }
 
     return (
       <div className="Header" style={style_header}>
@@ -29,12 +27,12 @@ class Header extends React.Component {
           <h1>{this.props.title}</h1>
         </div>
         <div className="Button">
-          <button style={style_addChatButton} onClick={this.props.onClick}> 
+          <button style={style_addChatButton} onClick={this.props.onClick}>
             Add chat
           </button>
         </div>
       </div>
-    );
+    )
   }
 }
 

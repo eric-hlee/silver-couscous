@@ -41,29 +41,26 @@ a {
   }
 }
 
-.content {
-  min-height: calc(100vh - 70px);
+.contact-item {
+  border-radius: 50%;
+  padding: 11px 12px;
 }
 
-.dot {
-  display: inline-block;
-  background-color: $blue-chill;
-  border-radius: 50%;
-  height: 25px;
-  width: 25px;
+.content {
+  min-height: calc(100vh - 70px);
 }
 
 .footer {
   background-color: $athens-gray;
   font-size: 14px;
-  height: 100px;
+  height: 120px;
   padding-top: 20px;
   text-align: center;
   width: 100%;
 
   a {
     &:not(:last-of-type) {
-      padding-right: 5px;
+      margin-right: 8px;
     }
   }
 }
