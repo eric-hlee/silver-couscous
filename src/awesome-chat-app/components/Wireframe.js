@@ -9,7 +9,9 @@ class Wireframe extends React.Component {
   render() {
 
     const style_wireframe = {
-      height: '80vh',
+      height: '100%',
+      minHeight: '100%',
+      overflow: 'hidden',
     }
 
     return (
