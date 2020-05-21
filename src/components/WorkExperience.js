@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { FormattedMessage } from "react-intl";
 import Card from "react-bootstrap/Card";
 import Carousel from "react-bootstrap/Carousel";
-import Media from "react-bootstrap/Media";
 import ListGroup from "react-bootstrap/ListGroup";
+import Media from "react-bootstrap/Media";
 
 export default function WorkExperience(props) {
+	const [index, setIndex] = useState(2);
+
+	const handleSelect = (selectedIndex) => {
+		setIndex(selectedIndex);
+	};
+
 	const { workDescriptions } = props;
 	return (
-		<Carousel controls={false}>
+		<Carousel activeIndex={index} controls={false} onSelect={handleSelect}>
 			<Carousel.Item>
 				<Card>
 					<Card.Body>

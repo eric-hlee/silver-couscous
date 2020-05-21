@@ -20,7 +20,8 @@
     "build": "react-scripts build",
     "test": "jest --config jest.config.js",
     "eject": "react-scripts eject",
-    "extract-messages": "NODE_ENV=production babel ./src  --out-file /dev/null"
+    "extract-messages": "NODE_ENV=production babel ./src  --out-file /dev/null",
+    "sass-lint": "sass-lint -c .sasslintrc src/App.scss -v -q"
   },
   "eslintConfig": {
     "extends": "react-app"
