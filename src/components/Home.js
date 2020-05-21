@@ -27,7 +27,7 @@ export default function Home() {
 						<p>
 							<Button
 								variant="primary"
-								href="http://localhost:9000/resume"
+								href="https://morning-garden-95959.herokuapp.com/resume"
 								className="icon-download"
 							>
 								<FormattedMessage id="home.resume" defaultMessage="Resume" />
