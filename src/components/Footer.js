@@ -10,6 +10,9 @@ export default function Footer() {
 				</span>
 				.
 			</p>
+			<a href="mailto:hsuan9528@gmail.com">
+				<span className="dot icon-mail-alt"></span>
+			</a>
 			<a href="http://www.linkedin.com/in/erichsuanlee">
 				<span className="dot icon-linkedin"></span>
 			</a>
