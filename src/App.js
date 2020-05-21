@@ -5,6 +5,7 @@ import "@formatjs/intl-relativetimeformat/polyfill";
 import "@formatjs/intl-relativetimeformat/dist/locale-data/zh";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
+import ChatApp from "./awesome-chat-app/ChatApp";
 import "./App.scss";
 import messages_en from "./translations/en.json";
 import messages_zh from "./translations/zh.json";
@@ -23,6 +24,7 @@ export default function App() {
         <NavBar />
         <Router>
           <Switch>
+            <Route path="/chat_app" component={ChatApp} />
             <Route exact path="/" component={Home} />
           </Switch>
         </Router>
