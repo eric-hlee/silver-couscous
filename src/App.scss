@@ -11,7 +11,7 @@ $white: #FFF;
 $empty-content: '';
 $speech-bubble-margin: 0 auto 40px 0;
 $speech-bubble-p-margin: 0 0 10px;
-$spinner-margin: 20px;
+$spinner-margin: 150px;
 
 header,
 section,
@@ -39,6 +39,10 @@ a {
   li {
     background-color: $gray;
   }
+}
+
+.col-sm {
+  margin-top: 5px;
 }
 
 .contact-item {
@@ -120,7 +124,7 @@ a {
     content: $empty-content;
     left: -20px;
     position: absolute;
-    top: 20px;
+    top: 100px;
   }
 }
 

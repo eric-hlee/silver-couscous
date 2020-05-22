@@ -47,7 +47,7 @@ export default function Home () {
                   fluid
                 />
               </Col>
-              <Col>
+              <Col sm>
                 <div className="speech-bubble">
                   <p>
                     <strong>

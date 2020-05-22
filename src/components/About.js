@@ -53,7 +53,7 @@ export default function About () {
   }, [])
 
   return (
-    <main>
+    <section>
       <Tabs defaultActiveKey="work-experience" id="about_tabs">
         <Tab
           className={isLoading ? 'loading' : ''}
@@ -93,6 +93,6 @@ export default function About () {
           <KeySkills />
         </Tab>
       </Tabs>
-    </main>
+    </section>
   )
 }
