@@ -26,7 +26,7 @@ export default function Home () {
             </p>
             <p>
               <Button
-                variant="primary"
+                variant="dark"
                 href="https://morning-garden-95959.herokuapp.com/resume"
                 className="icon-download"
               >

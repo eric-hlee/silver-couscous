@@ -2,10 +2,10 @@ import React from 'react'
 import { FormattedMessage } from 'react-intl'
 import Card from 'react-bootstrap/Card'
 
-export default function Education () {
+export default function Education() {
   return (
     <Card>
-      <Card.Link href="http://www.queensu.ca/" target="_blank">
+      <Card.Link href="http://www.queensu.ca/" target="_blank" rel="noopener">
         <Card.Img variant="top" src={require('../assets/images/queensu.png')} />
       </Card.Link>
       <Card.Body>

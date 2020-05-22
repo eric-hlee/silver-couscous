@@ -1,5 +1,5 @@
-import React from 'react';
-import Button from 'react-bootstrap/Button';
+import React from 'react'
+import Button from 'react-bootstrap/Button'
 
 export default function Footer() {
   return (
@@ -14,18 +14,24 @@ export default function Footer() {
       <Button
         className="contact-item icon-mail-alt"
         href="mailto:hsuan9528@gmail.com"
-        variant="dark"
-      ></Button>
+        variant="outline-dark"
+      >
+        Email
+      </Button>
       <Button
         className="contact-item icon-linkedin"
         href="http://www.linkedin.com/in/erichsuanlee"
-        variant="dark"
-      ></Button>
+        variant="outline-dark"
+      >
+        LinkedIn
+      </Button>
       <Button
         className="contact-item icon-github"
         href="http://github.com/ericlee1995"
-        variant="dark"
-      ></Button>
+        variant="outline-dark"
+      >
+        GitHub
+      </Button>
     </footer>
-  );
+  )
 }

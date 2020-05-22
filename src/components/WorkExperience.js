@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import { FormattedMessage } from 'react-intl';
-import Card from 'react-bootstrap/Card';
-import Carousel from 'react-bootstrap/Carousel';
-import ListGroup from 'react-bootstrap/ListGroup';
-import Media from 'react-bootstrap/Media';
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
+import { FormattedMessage } from 'react-intl'
+import Card from 'react-bootstrap/Card'
+import Carousel from 'react-bootstrap/Carousel'
+import ListGroup from 'react-bootstrap/ListGroup'
+import Media from 'react-bootstrap/Media'
 
 export default function WorkExperience(props) {
-  const [index, setIndex] = useState(2);
+  const [index, setIndex] = useState(2)
 
   const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
+    setIndex(selectedIndex)
+  }
 
-  const { workDescriptions } = props;
+  const { workDescriptions } = props
   return (
     <Carousel activeIndex={index} controls={false} onSelect={handleSelect}>
       <Carousel.Item>
@@ -32,6 +32,7 @@ export default function WorkExperience(props) {
                   <Card.Link
                     href="http://www.conversocial.com/"
                     target="_blank"
+                    rel="noopener"
                   >
                     <FormattedMessage
                       id="work.conv"
@@ -80,7 +81,11 @@ export default function WorkExperience(props) {
               />
               <Media.Body>
                 <Card.Title>
-                  <Card.Link href="http://verv.energy/" target="_blank">
+                  <Card.Link
+                    href="http://verv.energy/"
+                    target="_blank"
+                    rel="noopener"
+                  >
                     <FormattedMessage id="work.verv" defaultMessage="Verv" />
                   </Card.Link>
                 </Card.Title>
@@ -125,7 +130,11 @@ export default function WorkExperience(props) {
               />
               <Media.Body>
                 <Card.Title>
-                  <Card.Link href="http://www.ibm.com/" target="_blank">
+                  <Card.Link
+                    href="http://www.ibm.com/"
+                    target="_blank"
+                    rel="noopener"
+                  >
                     <FormattedMessage id="work.ibm" defaultMessage="IBM" />
                   </Card.Link>
                 </Card.Title>
@@ -170,7 +179,11 @@ export default function WorkExperience(props) {
               />
               <Media.Body>
                 <Card.Title>
-                  <Card.Link href="http://www.queensu.ca/" target="_blank">
+                  <Card.Link
+                    href="http://www.queensu.ca/"
+                    target="_blank"
+                    rel="noopener"
+                  >
                     <FormattedMessage
                       id="work.queensu"
                       defaultMessage="Queen's University"
@@ -206,9 +219,9 @@ export default function WorkExperience(props) {
         </Card>
       </Carousel.Item>
     </Carousel>
-  );
+  )
 }
 
 WorkExperience.propTypes = {
   workDescriptions: PropTypes.object.isRequired,
-};
+}
