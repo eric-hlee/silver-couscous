@@ -15,7 +15,7 @@ export default function Footer() {
         .
       </p>
       <Container className="contact-item-container">
-        <Row xs={2} md={4} lg={6}>
+        <Row>
           <Col>
             <Button
               className="contact-item icon-mail-alt"
@@ -24,8 +24,6 @@ export default function Footer() {
             >
               Email
             </Button>
-          </Col>
-          <Col>
             <Button
               className="contact-item icon-linkedin"
               href="http://www.linkedin.com/in/erichsuanlee"
@@ -33,8 +31,6 @@ export default function Footer() {
             >
               LinkedIn
             </Button>
-          </Col>
-          <Col>
             <Button
               className="contact-item icon-github"
               href="http://github.com/ericlee1995"
@@ -42,8 +38,6 @@ export default function Footer() {
             >
               GitHub
             </Button>
-          </Col>
-          <Col>
             <Button
               className="contact-item icon-instagram"
               href="http://www.instagram.com/eric.hlee/"

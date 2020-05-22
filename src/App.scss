@@ -53,7 +53,7 @@ a {
 }
 
 .contact-item-container {
-  width: 60%;
+  padding-bottom: 15px;
 }
 
 .content {
@@ -63,7 +63,6 @@ a {
 .footer {
   background-color: $athens-gray;
   font-size: 14px;
-  height: 180px;
   padding-top: 20px;
   text-align: center;
   width: 100%;
