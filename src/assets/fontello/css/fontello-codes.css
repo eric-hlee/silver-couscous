@@ -1,13 +1,10 @@
 
 .icon-download:before { content: '\e800'; } /* '' */
-.icon-link:before { content: '\e801'; } /* '' */
 .icon-mail:before { content: '\e802'; } /* '' */
-.icon-link-ext:before { content: '\f08e'; } /* '' */
-.icon-github-circled:before { content: '\f09b'; } /* '' */
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */
 .icon-linkedin:before { content: '\f0e1'; } /* '' */
 .icon-github:before { content: '\f113'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
 .icon-mail-squared:before { content: '\f199'; } /* '' */
 .icon-copyright:before { content: '\f1f9'; } /* '' */
-.icon-github-squared:before { content: '\f300'; } /* '' */
 .icon-linkedin-squared:before { content: '\f30c'; } /* '' */
