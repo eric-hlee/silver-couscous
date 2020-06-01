@@ -8,7 +8,9 @@ $gray: #808080;
 $home: url('./assets/images/home.jpg');
 $white: #FFF;
 
+$contact-item-margin: 2px;
 $empty-content: '';
+$margin-zero: 0;
 $speech-bubble-margin: 0 auto 40px 0;
 $speech-bubble-p-margin: 0 0 10px;
 $spinner-margin: 150px;
@@ -46,8 +48,8 @@ a {
 }
 
 .contact-item {
+  margin: $contact-item-margin;
   font-size: 14px;
-  margin: 2px;
   padding: 12px;
   width: 120px;
 }
@@ -102,6 +104,22 @@ a {
   &.active {
     font-weight: bold;
   }
+}
+
+.navbar-text {
+  padding-bottom: 0;
+}
+
+[data-netlify-identity-menu] {
+  ul {
+    display: flex;
+  }
+}
+
+.netlify-identity-item {
+  margin: $margin-zero;
+  list-style-type: none;
+  padding: 0 10px;
 }
 
 .section {

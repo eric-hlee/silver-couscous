@@ -4,14 +4,14 @@ import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import { FormattedMessage } from 'react-intl'
 
-export default function NavBar () {
+export default function NavBar() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="sm">
       <Navbar.Brand href="/">
         <FormattedMessage id="navbar.text" defaultMessage="Eric Lee" />
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar.Toggle />
+      <Navbar.Collapse className="justify-content-end">
         <Nav className="mr-auto">
           <NavDropdown
             title={
@@ -37,6 +37,7 @@ export default function NavBar () {
             </NavDropdown.Item>
           </NavDropdown>
         </Nav>
+        <Navbar.Text data-netlify-identity-menu />
       </Navbar.Collapse>
     </Navbar>
   )
