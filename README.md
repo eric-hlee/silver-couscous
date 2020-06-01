@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1e2814fe-b1cf-4925-87b4-3bd8b49eeed0/deploy-status)](https://app.netlify.com/sites/upbeat-elion-8ae820/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
