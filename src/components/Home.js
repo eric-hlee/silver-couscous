@@ -7,6 +7,7 @@ import Image from 'react-bootstrap/Image'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Row from 'react-bootstrap/Row'
 import About from './About'
+import Contact from './Contact'
 import Footer from './Footer'
 
 export default function Home() {
@@ -108,6 +109,7 @@ export default function Home() {
           </Container>
         </section>
         <About />
+        <Contact />
       </main>
       <Footer />
     </React.Fragment>

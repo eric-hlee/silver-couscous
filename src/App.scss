@@ -12,12 +12,17 @@ $white: #FFF;
 $contact-item-margin: 2px;
 $empty-content: '';
 $margin-zero: 0;
+$section-margin: 1rem;
 $speech-bubble-margin: 0 auto 40px 0;
 $speech-bubble-p-margin: 0 0 10px;
 $spinner-margin: 150px;
 
 a {
   color: inherit;
+}
+
+section {
+  margin: $section-margin;
 }
 
 .card {
@@ -40,6 +45,16 @@ a {
 
 .col-sm {
   margin-top: 5px;
+}
+
+.contact {
+  overflow: hidden;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .contact-item {
@@ -139,8 +154,8 @@ a {
   position: relative;
 
   p {
-    background: $outer-space;
     margin: $speech-bubble-p-margin;
+    background: $outer-space;
     font-size: 1.2rem;
 
     :last-of-type {
@@ -151,6 +166,10 @@ a {
 
 .spinner {
   margin: $spinner-margin;
+}
+
+.submit-button {
+  float: right;
 }
 
 .underline {
