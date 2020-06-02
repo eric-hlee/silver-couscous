@@ -6,6 +6,7 @@ $cultured: #F9F8F8;
 $gallery: #EFEFEF;
 $gray: #808080;
 $home: url('./assets/images/home.jpg');
+$outer-space: #343A40;
 $white: #FFF;
 
 $contact-item-margin: 2px;
@@ -14,12 +15,6 @@ $margin-zero: 0;
 $speech-bubble-margin: 0 auto 40px 0;
 $speech-bubble-p-margin: 0 0 10px;
 $spinner-margin: 150px;
-
-header,
-section,
-main {
-  padding: .5rem 1rem;
-}
 
 a {
   color: inherit;
@@ -63,7 +58,7 @@ a {
 }
 
 .footer {
-  background-color: $athens-gray;
+  background: $outer-space;
   font-size: 14px;
   padding-top: 20px;
   text-align: center;
@@ -74,10 +69,18 @@ a {
       margin-right: 8px;
     }
   }
+
+  p {
+    color: $white;
+  }
+}
+
+.img-col {
+  max-width: fit-content;
 }
 
 .img-eric {
-  max-width: fit-content;
+  padding: 2px;
 }
 
 .info-item {
@@ -88,6 +91,7 @@ a {
   background-image: $home;
   background-position: center;
   background-size: cover;
+  border-radius: 0;
 }
 
 .key-skills {
@@ -128,27 +132,20 @@ a {
 
 .speech-bubble {
   margin: $speech-bubble-margin;
-  background: $gallery;
+  background: $outer-space;
   border-radius: 4px;
+  color: $white;
   padding: 15px;
   position: relative;
 
   p {
+    background: $outer-space;
     margin: $speech-bubble-p-margin;
     font-size: 1.2rem;
 
     :last-of-type {
       margin-bottom: 0;
     }
-  }
-
-  &::after {
-    border-left: 20px solid transparent;
-    border-top: 20px solid $gallery;
-    content: $empty-content;
-    left: -20px;
-    position: absolute;
-    top: 100px;
   }
 }
 

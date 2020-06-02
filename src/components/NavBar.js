@@ -6,7 +6,7 @@ import { FormattedMessage } from 'react-intl'
 
 export default function NavBar() {
   return (
-    <Navbar bg="light" expand="sm">
+    <Navbar bg="dark" variant="dark" expand="sm">
       <Navbar.Brand href="/">
         <FormattedMessage id="navbar.text" defaultMessage="Eric Lee" />
       </Navbar.Brand>

@@ -9,7 +9,7 @@ import Row from 'react-bootstrap/Row'
 import About from './About'
 import Footer from './Footer'
 
-export default function Home () {
+export default function Home() {
   return (
     <React.Fragment>
       <main>
@@ -38,8 +38,9 @@ export default function Home () {
         <section>
           <Container fluid>
             <Row>
-              <Col className="img-eric">
+              <Col className="img-col">
                 <Image
+                  className="img-eric"
                   src={require('../assets/images/eric.jpg')}
                   alt="Picture of Eric"
                   height="180"
@@ -47,7 +48,7 @@ export default function Home () {
                   fluid
                 />
               </Col>
-              <Col sm>
+              <Col sm={8} className="about-body">
                 <div className="speech-bubble">
                   <p>
                     <strong>
