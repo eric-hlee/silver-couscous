@@ -1,13 +1,16 @@
 import React, { useState } from 'react'
+import { FormattedMessage } from 'react-intl'
 import Button from 'react-bootstrap/Button'
 import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
+import Modal from 'react-bootstrap/Modal'
 
 export default function Contact() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   const [validated, setValidated] = useState(false)
+  const [show, setShow] = useState(false)
 
   const encode = (data) => {
     return Object.keys(data)
@@ -26,13 +29,25 @@ export default function Contact() {
 
     setValidated(true)
 
+    const nameEmailInput = document.querySelector('#formNameEmail')
+    const messageInput = document.querySelector('#formMessage')
+    if (!nameEmailInput.checkValidity() || !messageInput.checkValidity()) {
+      return
+    }
+
     const data = { name, email, message }
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contact', ...data }),
     })
-      .then(() => alert('Success!'))
+      .then(() => {
+        handleShow()
+        setName('')
+        setEmail('')
+        setMessage('')
+        setValidated(false)
+      })
       .catch((error) => alert(error))
 
     e.preventDefault()
@@ -54,9 +69,14 @@ export default function Contact() {
     }
   }
 
+  const handleClose = () => setShow(false)
+  const handleShow = () => setShow(true)
+
   return (
     <section className="contact-form">
-      <h1 className="contact">Contact me</h1>
+      <h1 className="contact">
+        <FormattedMessage id="contact.contact_me" defaultMessage="Contact me" />
+      </h1>
       <Form
         name="contact"
         method="post"
@@ -65,10 +85,12 @@ export default function Contact() {
         validated={validated}
         onSubmit={handleSubmit}
       >
-        <Form.Group controlId="formName&Email">
+        <Form.Group controlId="formNameEmail">
           <Form.Row>
             <Col>
-              <Form.Label>Name</Form.Label>
+              <Form.Label>
+                <FormattedMessage id="contact.name" defaultMessage="Name" />
+              </Form.Label>
               <Form.Control
                 type="text"
                 name="name"
@@ -78,11 +100,19 @@ export default function Contact() {
                 required
               />
               <Form.Control.Feedback type="invalid">
-                Please enter your name.
+                <FormattedMessage
+                  id="contact.invalid_name"
+                  defaultMessage="Please enter your name."
+                />
               </Form.Control.Feedback>
             </Col>
             <Col>
-              <Form.Label>Email address</Form.Label>
+              <Form.Label>
+                <FormattedMessage
+                  id="contact.email"
+                  defaultMessage="Email address"
+                />
+              </Form.Label>
               <Form.Control
                 type="email"
                 name="email"
@@ -92,13 +122,18 @@ export default function Contact() {
                 required
               />
               <Form.Control.Feedback type="invalid">
-                Please provide a valid email.
+                <FormattedMessage
+                  id="contact.invalid_email"
+                  defaultMessage="Please provide a valid email."
+                />
               </Form.Control.Feedback>
             </Col>
           </Form.Row>
         </Form.Group>
         <Form.Group controlId="formMessage">
-          <Form.Label>Message</Form.Label>
+          <Form.Label>
+            <FormattedMessage id="contact.message" defaultMessage="Message" />
+          </Form.Label>
           <Form.Control
             as="textarea"
             name="message"
@@ -108,13 +143,39 @@ export default function Contact() {
             required
           />
           <Form.Control.Feedback type="invalid">
-            Please enter a message.
+            <FormattedMessage
+              id="contact.invalid_message"
+              defaultMessage="Please enter a message."
+            />
           </Form.Control.Feedback>
         </Form.Group>
         <Button className="submit-button" variant="dark" type="submit">
-          Submit
+          <FormattedMessage id="contact.submit" defaultMessage="Submit" />
         </Button>
       </Form>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>
+            <FormattedMessage
+              id="contact.success"
+              defaultMessage="🎉 Success!"
+            />
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>
+            <FormattedMessage
+              id="contact.success_message"
+              defaultMessage="If necessary, I will respond to you as soon as possible."
+            />
+          </p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            <FormattedMessage id="contact.close" defaultMessage="Close" />
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </section>
   )
 }
