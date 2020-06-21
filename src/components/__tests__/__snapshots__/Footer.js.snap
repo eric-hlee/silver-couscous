@@ -17,19 +17,56 @@ exports[`<Footer /> renders correctly 1`] = `
     </span>
     .
   </p>
-  <a
-    href="http://www.linkedin.com/in/erichsuanlee"
+  <Container
+    className="contact-item-container"
+    fluid={false}
   >
-    <span
-      className="dot icon-linkedin"
-    />
-  </a>
-  <a
-    href="http://github.com/ericlee1995"
-  >
-    <span
-      className="dot icon-github"
-    />
-  </a>
+    <Row
+      noGutters={false}
+    >
+      <Col>
+        <Button
+          active={false}
+          className="contact-item icon-mail-alt"
+          disabled={false}
+          href="mailto:hsuan9528@gmail.com"
+          type="button"
+          variant="outline-light"
+        >
+          Email
+        </Button>
+        <Button
+          active={false}
+          className="contact-item icon-linkedin"
+          disabled={false}
+          href="http://www.linkedin.com/in/erichsuanlee"
+          type="button"
+          variant="outline-light"
+        >
+          LinkedIn
+        </Button>
+        <Button
+          active={false}
+          className="contact-item icon-github"
+          disabled={false}
+          href="http://github.com/ericlee1995"
+          type="button"
+          variant="outline-light"
+        >
+          GitHub
+        </Button>
+        <Button
+          active={false}
+          className="contact-item icon-instagram"
+          disabled={false}
+          href="http://www.instagram.com/eric.hlee/"
+          type="button"
+          variant="outline-light"
+        >
+          Instagram
+        </Button>
+      </Col>
+    </Row>
+  </Container>
 </footer>
 `;

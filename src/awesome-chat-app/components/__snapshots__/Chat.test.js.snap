@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chat should render self and subcomponents 1`] = `
+<Chat
+  messageList={
+    Array [
+      Object {
+        "fromUser": false,
+        "id": 0,
+        "message": "Welcome to the chat",
+        "time": "2019-06-07T11:22:05.032Z",
+      },
+    ]
+  }
+  messagesEnd={<div />}
+>
+  <div
+    className="Conversation"
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "height": "100%",
+      }
+    }
+  >
+    <div
+      className="Message"
+      style={
+        Object {
+          "height": "500px",
+          "marginBottom": "20px",
+          "overflow": "auto",
+        }
+      }
+    >
+      <RepliedMessage
+        date="2019-06-07T11:22:05.032Z"
+        key="0"
+        text="Welcome to the chat"
+      >
+        <div
+          className="MessageBubbleGroup"
+          style={
+            Object {
+              "overflow": "auto",
+              "position": "relative",
+            }
+          }
+        >
+          <div
+            className="RepliedMessageBubble"
+            style={
+              Object {
+                "border": "1px solid #555555",
+                "borderRadius": "10px",
+                "display": "inline-block",
+                "marginBottom": "15px",
+                "padding": "15px",
+              }
+            }
+          >
+            <div
+              className="Date"
+            >
+              <span>
+                Sent on 
+                2019-06-07T11:22:05.032Z
+              </span>
+            </div>
+            <div
+              className="Message"
+              style={
+                Object {
+                  "fontFamily": "Helvetica Neue, Arial, sans-serif",
+                  "fontSize": "16px",
+                  "marginTop": "6px",
+                }
+              }
+            >
+              <span>
+                Welcome to the chat
+              </span>
+            </div>
+          </div>
+        </div>
+      </RepliedMessage>
+      <div />
+    </div>
+    <div
+      className="ChatBox"
+      style={
+        Object {
+          "display": "inline-block",
+          "padding": "10px",
+          "position": "relative",
+          "width": "50%",
+        }
+      }
+    >
+      <div
+        className="Textarea"
+      >
+        <textarea
+          autoFocus={true}
+          id="replyTextArea"
+          placeholder="Type your message here and press enter to send..."
+          style={
+            Object {
+              "border": "2px solid #ccc",
+              "borderRadius": "4px",
+              "boxSizing": "border-box",
+              "fontSize": "16px",
+              "minHeight": "58px",
+              "outline": "none",
+              "overflow": "auto",
+              "padding": "1em",
+              "resize": "none",
+              "width": "100%",
+            }
+          }
+          type="text"
+        />
+      </div>
+    </div>
+  </div>
+</Chat>
+`;

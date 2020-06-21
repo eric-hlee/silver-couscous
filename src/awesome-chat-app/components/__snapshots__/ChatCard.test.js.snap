@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChatCard should render self and subcomponents 1`] = `
+<div
+  className="ChatCard"
+  style={
+    Object {
+      "backgroundColor": "#EAEEEE",
+      "overflow": "auto",
+      "padding": "15px",
+      "position": "relative",
+    }
+  }
+>
+  <button
+    className="selectedChatCard"
+    style={
+      Object {
+        "background": "none",
+        "border": "none",
+        "color": "black",
+        "cursor": "pointer",
+        "font": "inherit",
+        "fontSize": "16px",
+        "padding": "0",
+        "textAlign": "center",
+        "width": "calc(100% - 20px)",
+      }
+    }
+  />
+  <Connect(DeleteButton) />
+</div>
+`;

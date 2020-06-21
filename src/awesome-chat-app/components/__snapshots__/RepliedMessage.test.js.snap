@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RepliedMessage should render self and subcomponents 1`] = `
+<div
+  className="MessageBubbleGroup"
+  style={
+    Object {
+      "overflow": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="RepliedMessageBubble"
+    style={
+      Object {
+        "border": "1px solid #555555",
+        "borderRadius": "10px",
+        "display": "inline-block",
+        "marginBottom": "15px",
+        "padding": "15px",
+      }
+    }
+  >
+    <div
+      className="Date"
+    >
+      <span>
+        Sent on 
+      </span>
+    </div>
+    <div
+      className="Message"
+      style={
+        Object {
+          "fontFamily": "Helvetica Neue, Arial, sans-serif",
+          "fontSize": "16px",
+          "marginTop": "6px",
+        }
+      }
+    >
+      <span />
+    </div>
+  </div>
+</div>
+`;

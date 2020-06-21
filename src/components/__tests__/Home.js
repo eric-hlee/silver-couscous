@@ -15,13 +15,14 @@ describe('<Home />', () => {
         <Home />
       </IntlProvider>
     )
-    wrapper.find('Button').simulate('click')
+    expect(wrapper).toMatchSnapshot()
+    wrapper.find('Button').first().simulate('click')
     global.window = Object.create(window)
     const href = 'http://localhost:9000/resume'
     Object.defineProperty(window, 'location', {
       value: {
-        href
-      }
+        href,
+      },
     })
     expect(window.location.href).toEqual(href)
     delete window.location

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<About /> renders correctly 1`] = `
-<main>
+<section>
   <Tabs
     defaultActiveKey="work-experience"
     id="about_tabs"
@@ -10,6 +10,7 @@ exports[`<About /> renders correctly 1`] = `
     variant="tabs"
   >
     <Tab
+      className="loading"
       eventKey="work-experience"
       title={
         <FormattedMessage
@@ -19,16 +20,18 @@ exports[`<About /> renders correctly 1`] = `
         />
       }
     >
-      <WorkExperience
-        workDescriptions={
-          Object {
-            "conversocial": null,
-            "ibm": null,
-            "queensu": null,
-            "verv": null,
-          }
-        }
-      />
+      <Spinner
+        animation="border"
+        className="spinner"
+        role="status"
+        variant="secondary"
+      >
+        <span
+          className="sr-only"
+        >
+          Loading...
+        </span>
+      </Spinner>
     </Tab>
     <Tab
       eventKey="education"
@@ -55,12 +58,12 @@ exports[`<About /> renders correctly 1`] = `
       <KeySkills />
     </Tab>
   </Tabs>
-</main>
+</section>
 `;
 
 exports[`<About /> should return data with a successful request 1`] = `
 <div>
-  <main>
+  <section>
     <nav
       class="nav nav-tabs"
       role="tablist"
@@ -117,18 +120,18 @@ exports[`<About /> should return data with a successful request 1`] = `
           <ol
             class="carousel-indicators"
           >
+            <li />
+            <li />
             <li
               class="active"
             />
-            <li />
-            <li />
             <li />
           </ol>
           <div
             class="carousel-inner"
           >
             <div
-              class="active carousel-item"
+              class="carousel-item"
             >
               <div
                 class="card"
@@ -155,6 +158,7 @@ exports[`<About /> should return data with a successful request 1`] = `
                         <a
                           class="card-link"
                           href="http://www.conversocial.com/"
+                          rel="noopener"
                           target="_blank"
                         >
                           Conversocial
@@ -228,6 +232,7 @@ exports[`<About /> should return data with a successful request 1`] = `
                         <a
                           class="card-link"
                           href="http://verv.energy/"
+                          rel="noopener"
                           target="_blank"
                         >
                           Verv
@@ -274,7 +279,7 @@ exports[`<About /> should return data with a successful request 1`] = `
               </div>
             </div>
             <div
-              class="carousel-item"
+              class="active carousel-item"
             >
               <div
                 class="card"
@@ -301,6 +306,7 @@ exports[`<About /> should return data with a successful request 1`] = `
                         <a
                           class="card-link"
                           href="http://www.ibm.com/"
+                          rel="noopener"
                           target="_blank"
                         >
                           IBM
@@ -374,6 +380,7 @@ exports[`<About /> should return data with a successful request 1`] = `
                         <a
                           class="card-link"
                           href="http://www.queensu.ca/"
+                          rel="noopener"
                           target="_blank"
                         >
                           Queen's University
@@ -435,6 +442,7 @@ exports[`<About /> should return data with a successful request 1`] = `
           <a
             class="card-link"
             href="http://www.queensu.ca/"
+            rel="noopener"
             target="_blank"
           >
             <img
@@ -624,6 +632,6 @@ exports[`<About /> should return data with a successful request 1`] = `
         </div>
       </div>
     </div>
-  </main>
+  </section>
 </div>
 `;

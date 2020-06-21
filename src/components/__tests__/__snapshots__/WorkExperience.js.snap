@@ -2,6 +2,7 @@
 
 exports[`<WorkExperience /> renders correctly 1`] = `
 <Carousel
+  activeIndex={2}
   controls={false}
   defaultActiveIndex={0}
   fade={false}
@@ -15,6 +16,7 @@ exports[`<WorkExperience /> renders correctly 1`] = `
     />
   }
   nextLabel="Next"
+  onSelect={[Function]}
   pause="hover"
   prevIcon={
     <span
@@ -44,6 +46,7 @@ exports[`<WorkExperience /> renders correctly 1`] = `
             <CardTitle>
               <CardLink
                 href="http://www.conversocial.com/"
+                rel="noopener"
                 target="_blank"
               >
                 <FormattedMessage
@@ -85,7 +88,32 @@ exports[`<WorkExperience /> renders correctly 1`] = `
               className="conversocial"
               horizontal={null}
               variant="flush"
-            />
+            >
+              <ListGroupItem
+                active={false}
+                disabled={false}
+                key="0"
+                variant={null}
+              >
+                work
+              </ListGroupItem>
+              <ListGroupItem
+                active={false}
+                disabled={false}
+                key="1"
+                variant={null}
+              >
+                work
+              </ListGroupItem>
+              <ListGroupItem
+                active={false}
+                disabled={false}
+                key="2"
+                variant={null}
+              >
+                work
+              </ListGroupItem>
+            </ListGroup>
           </MediaBody>
         </Media>
       </CardBody>
@@ -108,6 +136,7 @@ exports[`<WorkExperience /> renders correctly 1`] = `
             <CardTitle>
               <CardLink
                 href="http://verv.energy/"
+                rel="noopener"
                 target="_blank"
               >
                 <FormattedMessage
@@ -149,7 +178,32 @@ exports[`<WorkExperience /> renders correctly 1`] = `
               className="verv"
               horizontal={null}
               variant="flush"
-            />
+            >
+              <ListGroupItem
+                active={false}
+                disabled={false}
+                key="0"
+                variant={null}
+              >
+                work
+              </ListGroupItem>
+              <ListGroupItem
+                active={false}
+                disabled={false}
+                key="1"
+                variant={null}
+              >
+                work
+              </ListGroupItem>
+              <ListGroupItem
+                active={false}
+                disabled={false}
+                key="2"
+                variant={null}
+              >
+                work
+              </ListGroupItem>
+            </ListGroup>
           </MediaBody>
         </Media>
       </CardBody>
@@ -172,6 +226,7 @@ exports[`<WorkExperience /> renders correctly 1`] = `
             <CardTitle>
               <CardLink
                 href="http://www.ibm.com/"
+                rel="noopener"
                 target="_blank"
               >
                 <FormattedMessage
@@ -213,7 +268,32 @@ exports[`<WorkExperience /> renders correctly 1`] = `
               className="ibm"
               horizontal={null}
               variant="flush"
-            />
+            >
+              <ListGroupItem
+                active={false}
+                disabled={false}
+                key="0"
+                variant={null}
+              >
+                work
+              </ListGroupItem>
+              <ListGroupItem
+                active={false}
+                disabled={false}
+                key="1"
+                variant={null}
+              >
+                work
+              </ListGroupItem>
+              <ListGroupItem
+                active={false}
+                disabled={false}
+                key="2"
+                variant={null}
+              >
+                work
+              </ListGroupItem>
+            </ListGroup>
           </MediaBody>
         </Media>
       </CardBody>
@@ -236,6 +316,7 @@ exports[`<WorkExperience /> renders correctly 1`] = `
             <CardTitle>
               <CardLink
                 href="http://www.queensu.ca/"
+                rel="noopener"
                 target="_blank"
               >
                 <FormattedMessage

@@ -57,6 +57,17 @@ exports[`<App /> renders Home 1`] = `
               "about.education": "🎓 Education",
               "about.key_skills": "🧰 Key Skills",
               "about.work_experience": "📃 Work Experience",
+              "contact.close": "Close",
+              "contact.contact_me": "Contact me",
+              "contact.email": "Email address",
+              "contact.invalid_email": "Please provide a valid email.",
+              "contact.invalid_message": "Please enter a message.",
+              "contact.invalid_name": "Please enter your name.",
+              "contact.message": "Message",
+              "contact.name": "Name",
+              "contact.submit": "Submit",
+              "contact.success": "🎉 Success!",
+              "contact.success_message": "If necessary, I will respond to you as soon as possible.",
               "education.deans_list": "Dean’s Honour List 2017-18",
               "education.degree": "Bachelor of Computing (Honours)",
               "education.program": "Specialization in Software Design with Professional Internship",
@@ -73,7 +84,10 @@ exports[`<App /> renders Home 1`] = `
               "home.life_as_dev_7": "🆕Open for new opportunities!",
               "home.resume": "Resume",
               "home.whoami": "My name is Eric.",
+              "navbar.chat_app": "'Echo' Chat App",
+              "navbar.portfolio": "Portfolio",
               "navbar.text": "Eric Lee",
+              "navbar.to_be_updated": "To be updated...",
               "work.conv": "Conversocial",
               "work.conv_jse": "Junior Software Engineer",
               "work.conv_work_period": "May 2019 – Apr 2020",
@@ -96,13 +110,13 @@ exports[`<App /> renders Home 1`] = `
         >
           <NavBar>
             <Navbar
-              bg="light"
+              bg="dark"
               collapseOnSelect={false}
-              expand="lg"
-              variant="light"
+              expand="sm"
+              variant="dark"
             >
               <nav
-                className="navbar navbar-expand-lg navbar-light bg-light"
+                className="navbar navbar-expand-sm navbar-dark bg-dark"
               >
                 <NavbarBrand
                   href="/"
@@ -121,11 +135,9 @@ exports[`<App /> renders Home 1`] = `
                   </a>
                 </NavbarBrand>
                 <NavbarToggle
-                  aria-controls="basic-navbar-nav"
                   label="Toggle navigation"
                 >
                   <button
-                    aria-controls="basic-navbar-nav"
                     aria-label="Toggle navigation"
                     className="navbar-toggler collapsed"
                     onClick={[Function]}
@@ -136,6 +148,193 @@ exports[`<App /> renders Home 1`] = `
                     />
                   </button>
                 </NavbarToggle>
+                <NavbarCollapse
+                  className="justify-content-end"
+                >
+                  <Collapse
+                    appear={false}
+                    className="justify-content-end"
+                    dimension="height"
+                    getDimensionValue={[Function]}
+                    in={false}
+                    mountOnEnter={false}
+                    timeout={300}
+                    unmountOnExit={false}
+                  >
+                    <Transition
+                      addEndListener={[Function]}
+                      appear={false}
+                      aria-expanded={null}
+                      enter={true}
+                      exit={true}
+                      in={false}
+                      mountOnEnter={false}
+                      onEnter={[Function]}
+                      onEntered={[Function]}
+                      onEntering={[Function]}
+                      onExit={[Function]}
+                      onExited={[Function]}
+                      onExiting={[Function]}
+                      timeout={300}
+                      unmountOnExit={false}
+                    >
+                      <div
+                        aria-expanded={null}
+                        className="justify-content-end navbar-collapse collapse"
+                      >
+                        <Nav
+                          className="mr-auto"
+                          fill={false}
+                          justify={false}
+                        >
+                          <ForwardRef
+                            as="div"
+                            className="mr-auto navbar-nav"
+                            onSelect={[Function]}
+                          >
+                            <div
+                              className="mr-auto navbar-nav"
+                              onKeyDown={[Function]}
+                            >
+                              <NavDropdown
+                                id="portfolio-dropdown"
+                                title={
+                                  <FormattedMessage
+                                    defaultMessage="Portfolio"
+                                    id="navbar.portfolio"
+                                    values={Object {}}
+                                  />
+                                }
+                              >
+                                <Dropdown
+                                  as={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "displayName": "NavItem",
+                                      "render": [Function],
+                                    }
+                                  }
+                                  navbar={false}
+                                >
+                                  <ReactOverlaysDropdown
+                                    itemSelector=".dropdown-item:not(.disabled):not(:disabled)"
+                                    onToggle={[Function]}
+                                  >
+                                    <NavItem
+                                      className="dropdown"
+                                      onKeyDown={[Function]}
+                                    >
+                                      <div
+                                        className="dropdown nav-item"
+                                        onKeyDown={[Function]}
+                                      >
+                                        <DropdownToggle
+                                          as={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "defaultProps": Object {
+                                                "as": Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "displayName": "SafeAnchor",
+                                                  "render": [Function],
+                                                },
+                                                "disabled": false,
+                                              },
+                                              "displayName": "NavLink",
+                                              "render": [Function],
+                                            }
+                                          }
+                                          eventKey={null}
+                                          id="portfolio-dropdown"
+                                        >
+                                          <NavLink
+                                            aria-expanded={false}
+                                            aria-haspopup={true}
+                                            as={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "displayName": "SafeAnchor",
+                                                "render": [Function],
+                                              }
+                                            }
+                                            className="dropdown-toggle"
+                                            disabled={false}
+                                            eventKey={null}
+                                            id="portfolio-dropdown"
+                                            onClick={[Function]}
+                                          >
+                                            <ForwardRef
+                                              aria-expanded={false}
+                                              aria-haspopup={true}
+                                              as={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "displayName": "SafeAnchor",
+                                                  "render": [Function],
+                                                }
+                                              }
+                                              className="dropdown-toggle nav-link"
+                                              disabled={false}
+                                              eventKey={null}
+                                              id="portfolio-dropdown"
+                                              onClick={[Function]}
+                                            >
+                                              <SafeAnchor
+                                                aria-expanded={false}
+                                                aria-haspopup={true}
+                                                className="dropdown-toggle nav-link"
+                                                data-rb-event-key={null}
+                                                disabled={false}
+                                                id="portfolio-dropdown"
+                                                onClick={[Function]}
+                                              >
+                                                <a
+                                                  aria-expanded={false}
+                                                  aria-haspopup={true}
+                                                  className="dropdown-toggle nav-link"
+                                                  data-rb-event-key={null}
+                                                  href="#"
+                                                  id="portfolio-dropdown"
+                                                  onClick={[Function]}
+                                                  onKeyDown={[Function]}
+                                                  role="button"
+                                                >
+                                                  <FormattedMessage
+                                                    defaultMessage="Portfolio"
+                                                    id="navbar.portfolio"
+                                                    values={Object {}}
+                                                  >
+                                                    Portfolio
+                                                  </FormattedMessage>
+                                                </a>
+                                              </SafeAnchor>
+                                            </ForwardRef>
+                                          </NavLink>
+                                        </DropdownToggle>
+                                        <DropdownMenu
+                                          alignRight={false}
+                                          flip={true}
+                                        />
+                                      </div>
+                                    </NavItem>
+                                  </ReactOverlaysDropdown>
+                                </Dropdown>
+                              </NavDropdown>
+                            </div>
+                          </ForwardRef>
+                        </Nav>
+                        <NavbarText
+                          data-netlify-identity-menu={true}
+                        >
+                          <span
+                            className="navbar-text"
+                            data-netlify-identity-menu={true}
+                          />
+                        </NavbarText>
+                      </div>
+                    </Transition>
+                  </Collapse>
+                </NavbarCollapse>
               </nav>
             </Navbar>
           </NavBar>
@@ -255,18 +454,18 @@ exports[`<App /> renders Home 1`] = `
                                 active={false}
                                 className="icon-download"
                                 disabled={false}
-                                href="http://localhost:9000/resume"
+                                href="https://morning-garden-95959.herokuapp.com/resume"
                                 type="button"
-                                variant="primary"
+                                variant="dark"
                               >
                                 <SafeAnchor
-                                  className="icon-download btn btn-primary"
+                                  className="icon-download btn btn-dark"
                                   disabled={false}
-                                  href="http://localhost:9000/resume"
+                                  href="https://morning-garden-95959.herokuapp.com/resume"
                                 >
                                   <a
-                                    className="icon-download btn btn-primary"
-                                    href="http://localhost:9000/resume"
+                                    className="icon-download btn btn-dark"
+                                    href="https://morning-garden-95959.herokuapp.com/resume"
                                     onClick={[Function]}
                                     onKeyDown={[Function]}
                                   >
@@ -298,13 +497,14 @@ exports[`<App /> renders Home 1`] = `
                                 className="row"
                               >
                                 <Col
-                                  className="img-eric"
+                                  className="img-col"
                                 >
                                   <div
-                                    className="img-eric col"
+                                    className="img-col col"
                                   >
                                     <Image
                                       alt="Picture of Eric"
+                                      className="img-eric"
                                       fluid={true}
                                       height="180"
                                       rounded={false}
@@ -315,7 +515,7 @@ exports[`<App /> renders Home 1`] = `
                                     >
                                       <img
                                         alt="Picture of Eric"
-                                        className="img-fluid"
+                                        className="img-eric img-fluid"
                                         height="180"
                                         src="test-file-stub"
                                         width="171"
@@ -323,9 +523,12 @@ exports[`<App /> renders Home 1`] = `
                                     </Image>
                                   </div>
                                 </Col>
-                                <Col>
+                                <Col
+                                  className="about-body"
+                                  sm={8}
+                                >
                                   <div
-                                    className="col"
+                                    className="about-body col-sm-8"
                                   >
                                     <div
                                       className="speech-bubble"
@@ -415,7 +618,7 @@ exports[`<App /> renders Home 1`] = `
                         </Container>
                       </section>
                       <About>
-                        <main>
+                        <section>
                           <Tabs
                             defaultActiveKey="work-experience"
                             id="about_tabs"
@@ -688,6 +891,7 @@ exports[`<App /> renders Home 1`] = `
                                   className="tab-content"
                                 >
                                   <TabPane
+                                    className="loading"
                                     eventKey="work-experience"
                                     key=".0"
                                   >
@@ -717,694 +921,27 @@ exports[`<App /> renders Home 1`] = `
                                         <div
                                           aria-hidden={false}
                                           aria-labelledby="about_tabs-tab-work-experience"
-                                          className="fade tab-pane active show"
+                                          className="fade loading tab-pane active show"
                                           id="about_tabs-tabpane-work-experience"
                                           role="tabpanel"
                                         >
-                                          <WorkExperience
-                                            workDescriptions={
-                                              Object {
-                                                "conversocial": null,
-                                                "ibm": null,
-                                                "queensu": null,
-                                                "verv": null,
-                                              }
-                                            }
+                                          <Spinner
+                                            animation="border"
+                                            className="spinner"
+                                            role="status"
+                                            variant="secondary"
                                           >
-                                            <Carousel
-                                              controls={false}
-                                              defaultActiveIndex={0}
-                                              fade={false}
-                                              indicators={true}
-                                              interval={5000}
-                                              keyboard={true}
-                                              nextIcon={
-                                                <span
-                                                  aria-hidden="true"
-                                                  className="carousel-control-next-icon"
-                                                />
-                                              }
-                                              nextLabel="Next"
-                                              pause="hover"
-                                              prevIcon={
-                                                <span
-                                                  aria-hidden="true"
-                                                  className="carousel-control-prev-icon"
-                                                />
-                                              }
-                                              prevLabel="Previous"
-                                              slide={true}
-                                              touch={true}
-                                              wrap={true}
+                                            <div
+                                              className="spinner spinner-border text-secondary"
+                                              role="status"
                                             >
-                                              <div
-                                                className="carousel slide"
-                                                onKeyDown={[Function]}
-                                                onMouseOut={[Function]}
-                                                onMouseOver={[Function]}
-                                                onTouchEnd={[Function]}
-                                                onTouchMove={[Function]}
-                                                onTouchStart={[Function]}
+                                              <span
+                                                className="sr-only"
                                               >
-                                                <ol
-                                                  className="carousel-indicators"
-                                                >
-                                                  <li
-                                                    className="active"
-                                                    key="0/.0"
-                                                    onClick={[Function]}
-                                                  />
-                                                  <li
-                                                    className={null}
-                                                    key="1/.1"
-                                                    onClick={[Function]}
-                                                  />
-                                                  <li
-                                                    className={null}
-                                                    key="2/.2"
-                                                    onClick={[Function]}
-                                                  />
-                                                  <li
-                                                    className={null}
-                                                    key="3/.3"
-                                                    onClick={[Function]}
-                                                  />
-                                                </ol>
-                                                <div
-                                                  className="carousel-inner"
-                                                >
-                                                  <Transition
-                                                    addEndListener={[Function]}
-                                                    appear={false}
-                                                    enter={true}
-                                                    exit={true}
-                                                    in={true}
-                                                    key=".0"
-                                                    mountOnEnter={false}
-                                                    onEnter={[Function]}
-                                                    onEntered={[Function]}
-                                                    onEntering={[Function]}
-                                                    onExit={[Function]}
-                                                    onExited={[Function]}
-                                                    onExiting={[Function]}
-                                                    unmountOnExit={false}
-                                                  >
-                                                    <CarouselItem
-                                                      className="active"
-                                                    >
-                                                      <div
-                                                        className="active carousel-item"
-                                                      >
-                                                        <Card
-                                                          body={false}
-                                                        >
-                                                          <div
-                                                            className="card"
-                                                          >
-                                                            <CardBody>
-                                                              <div
-                                                                className="card-body"
-                                                              >
-                                                                <Media>
-                                                                  <div
-                                                                    className="media"
-                                                                  >
-                                                                    <img
-                                                                      alt="Conversocial logo"
-                                                                      className="mr-3"
-                                                                      height={64}
-                                                                      src="test-file-stub"
-                                                                      width={64}
-                                                                    />
-                                                                    <MediaBody>
-                                                                      <div
-                                                                        className="media-body"
-                                                                      >
-                                                                        <CardTitle>
-                                                                          <ForwardRef
-                                                                            className="card-title"
-                                                                          >
-                                                                            <div
-                                                                              className="card-title h5"
-                                                                            >
-                                                                              <CardLink
-                                                                                href="http://www.conversocial.com/"
-                                                                                target="_blank"
-                                                                              >
-                                                                                <a
-                                                                                  className="card-link"
-                                                                                  href="http://www.conversocial.com/"
-                                                                                  target="_blank"
-                                                                                >
-                                                                                  <FormattedMessage
-                                                                                    defaultMessage="Conversocial"
-                                                                                    id="work.conv"
-                                                                                    values={Object {}}
-                                                                                  >
-                                                                                    Conversocial
-                                                                                  </FormattedMessage>
-                                                                                </a>
-                                                                              </CardLink>
-                                                                            </div>
-                                                                          </ForwardRef>
-                                                                        </CardTitle>
-                                                                        <CardSubtitle
-                                                                          className="mb-2 text-muted"
-                                                                        >
-                                                                          <ForwardRef
-                                                                            className="mb-2 text-muted card-subtitle"
-                                                                          >
-                                                                            <div
-                                                                              className="mb-2 text-muted card-subtitle h6"
-                                                                            >
-                                                                              <FormattedMessage
-                                                                                defaultMessage="Junior Software Engineer"
-                                                                                id="work.conv_jse"
-                                                                                values={Object {}}
-                                                                              >
-                                                                                Junior Software Engineer
-                                                                              </FormattedMessage>
-                                                                              <span
-                                                                                className="info-item"
-                                                                              >
-                                                                                ·
-                                                                              </span>
-                                                                              <FormattedMessage
-                                                                                defaultMessage="May 2019 – Apr 2020"
-                                                                                id="work.conv_work_period"
-                                                                                values={Object {}}
-                                                                              >
-                                                                                May 2019 – Apr 2020
-                                                                              </FormattedMessage>
-                                                                            </div>
-                                                                          </ForwardRef>
-                                                                        </CardSubtitle>
-                                                                        <CardSubtitle
-                                                                          className="mb-2 text-muted"
-                                                                        >
-                                                                          <ForwardRef
-                                                                            className="mb-2 text-muted card-subtitle"
-                                                                          >
-                                                                            <div
-                                                                              className="mb-2 text-muted card-subtitle h6"
-                                                                            >
-                                                                              <FormattedMessage
-                                                                                defaultMessage="London, United Kingdom"
-                                                                                id="work.london_uk"
-                                                                                values={Object {}}
-                                                                              >
-                                                                                London, United Kingdom
-                                                                              </FormattedMessage>
-                                                                            </div>
-                                                                          </ForwardRef>
-                                                                        </CardSubtitle>
-                                                                        <ListGroup
-                                                                          className="conversocial"
-                                                                          horizontal={null}
-                                                                          variant="flush"
-                                                                        >
-                                                                          <ForwardRef
-                                                                            as="div"
-                                                                            className="conversocial list-group list-group-flush"
-                                                                            onSelect={[Function]}
-                                                                          >
-                                                                            <div
-                                                                              className="conversocial list-group list-group-flush"
-                                                                              onKeyDown={[Function]}
-                                                                            />
-                                                                          </ForwardRef>
-                                                                        </ListGroup>
-                                                                      </div>
-                                                                    </MediaBody>
-                                                                  </div>
-                                                                </Media>
-                                                              </div>
-                                                            </CardBody>
-                                                          </div>
-                                                        </Card>
-                                                      </div>
-                                                    </CarouselItem>
-                                                  </Transition>
-                                                  <Transition
-                                                    addEndListener={[Function]}
-                                                    appear={false}
-                                                    enter={true}
-                                                    exit={true}
-                                                    in={false}
-                                                    key=".1"
-                                                    mountOnEnter={false}
-                                                    onEnter={null}
-                                                    onEntered={null}
-                                                    onEntering={[Function]}
-                                                    onExit={[Function]}
-                                                    onExited={[Function]}
-                                                    onExiting={[Function]}
-                                                    unmountOnExit={false}
-                                                  >
-                                                    <CarouselItem
-                                                      className=""
-                                                    >
-                                                      <div
-                                                        className="carousel-item"
-                                                      >
-                                                        <Card
-                                                          body={false}
-                                                        >
-                                                          <div
-                                                            className="card"
-                                                          >
-                                                            <CardBody>
-                                                              <div
-                                                                className="card-body"
-                                                              >
-                                                                <Media>
-                                                                  <div
-                                                                    className="media"
-                                                                  >
-                                                                    <img
-                                                                      alt="Verv logo"
-                                                                      className="mr-3"
-                                                                      height={64}
-                                                                      src="test-file-stub"
-                                                                      width={64}
-                                                                    />
-                                                                    <MediaBody>
-                                                                      <div
-                                                                        className="media-body"
-                                                                      >
-                                                                        <CardTitle>
-                                                                          <ForwardRef
-                                                                            className="card-title"
-                                                                          >
-                                                                            <div
-                                                                              className="card-title h5"
-                                                                            >
-                                                                              <CardLink
-                                                                                href="http://verv.energy/"
-                                                                                target="_blank"
-                                                                              >
-                                                                                <a
-                                                                                  className="card-link"
-                                                                                  href="http://verv.energy/"
-                                                                                  target="_blank"
-                                                                                >
-                                                                                  <FormattedMessage
-                                                                                    defaultMessage="Verv"
-                                                                                    id="work.verv"
-                                                                                    values={Object {}}
-                                                                                  >
-                                                                                    Verv
-                                                                                  </FormattedMessage>
-                                                                                </a>
-                                                                              </CardLink>
-                                                                            </div>
-                                                                          </ForwardRef>
-                                                                        </CardTitle>
-                                                                        <CardSubtitle
-                                                                          className="mb-2 text-muted"
-                                                                        >
-                                                                          <ForwardRef
-                                                                            className="mb-2 text-muted card-subtitle"
-                                                                          >
-                                                                            <div
-                                                                              className="mb-2 text-muted card-subtitle h6"
-                                                                            >
-                                                                              <FormattedMessage
-                                                                                defaultMessage="Technical Support Engineer"
-                                                                                id="work.verv_tse"
-                                                                                values={Object {}}
-                                                                              >
-                                                                                Technical Support Engineer
-                                                                              </FormattedMessage>
-                                                                              <span
-                                                                                className="info-item"
-                                                                              >
-                                                                                ·
-                                                                              </span>
-                                                                              <FormattedMessage
-                                                                                defaultMessage="Oct 2018 – Apr 2019"
-                                                                                id="work.verv_work_period"
-                                                                                values={Object {}}
-                                                                              >
-                                                                                Oct 2018 – Apr 2019
-                                                                              </FormattedMessage>
-                                                                            </div>
-                                                                          </ForwardRef>
-                                                                        </CardSubtitle>
-                                                                        <CardSubtitle
-                                                                          className="mb-2 text-muted"
-                                                                        >
-                                                                          <ForwardRef
-                                                                            className="mb-2 text-muted card-subtitle"
-                                                                          >
-                                                                            <div
-                                                                              className="mb-2 text-muted card-subtitle h6"
-                                                                            >
-                                                                              <FormattedMessage
-                                                                                defaultMessage="London, United Kingdom"
-                                                                                id="work.london_uk"
-                                                                                values={Object {}}
-                                                                              >
-                                                                                London, United Kingdom
-                                                                              </FormattedMessage>
-                                                                            </div>
-                                                                          </ForwardRef>
-                                                                        </CardSubtitle>
-                                                                        <ListGroup
-                                                                          className="verv"
-                                                                          horizontal={null}
-                                                                          variant="flush"
-                                                                        >
-                                                                          <ForwardRef
-                                                                            as="div"
-                                                                            className="verv list-group list-group-flush"
-                                                                            onSelect={[Function]}
-                                                                          >
-                                                                            <div
-                                                                              className="verv list-group list-group-flush"
-                                                                              onKeyDown={[Function]}
-                                                                            />
-                                                                          </ForwardRef>
-                                                                        </ListGroup>
-                                                                      </div>
-                                                                    </MediaBody>
-                                                                  </div>
-                                                                </Media>
-                                                              </div>
-                                                            </CardBody>
-                                                          </div>
-                                                        </Card>
-                                                      </div>
-                                                    </CarouselItem>
-                                                  </Transition>
-                                                  <Transition
-                                                    addEndListener={[Function]}
-                                                    appear={false}
-                                                    enter={true}
-                                                    exit={true}
-                                                    in={false}
-                                                    key=".2"
-                                                    mountOnEnter={false}
-                                                    onEnter={null}
-                                                    onEntered={null}
-                                                    onEntering={[Function]}
-                                                    onExit={[Function]}
-                                                    onExited={[Function]}
-                                                    onExiting={[Function]}
-                                                    unmountOnExit={false}
-                                                  >
-                                                    <CarouselItem
-                                                      className=""
-                                                    >
-                                                      <div
-                                                        className="carousel-item"
-                                                      >
-                                                        <Card
-                                                          body={false}
-                                                        >
-                                                          <div
-                                                            className="card"
-                                                          >
-                                                            <CardBody>
-                                                              <div
-                                                                className="card-body"
-                                                              >
-                                                                <Media>
-                                                                  <div
-                                                                    className="media"
-                                                                  >
-                                                                    <img
-                                                                      alt="IBM logo"
-                                                                      className="mr-3"
-                                                                      height={64}
-                                                                      src="test-file-stub"
-                                                                      width={64}
-                                                                    />
-                                                                    <MediaBody>
-                                                                      <div
-                                                                        className="media-body"
-                                                                      >
-                                                                        <CardTitle>
-                                                                          <ForwardRef
-                                                                            className="card-title"
-                                                                          >
-                                                                            <div
-                                                                              className="card-title h5"
-                                                                            >
-                                                                              <CardLink
-                                                                                href="http://www.ibm.com/"
-                                                                                target="_blank"
-                                                                              >
-                                                                                <a
-                                                                                  className="card-link"
-                                                                                  href="http://www.ibm.com/"
-                                                                                  target="_blank"
-                                                                                >
-                                                                                  <FormattedMessage
-                                                                                    defaultMessage="IBM"
-                                                                                    id="work.ibm"
-                                                                                    values={Object {}}
-                                                                                  >
-                                                                                    IBM
-                                                                                  </FormattedMessage>
-                                                                                </a>
-                                                                              </CardLink>
-                                                                            </div>
-                                                                          </ForwardRef>
-                                                                        </CardTitle>
-                                                                        <CardSubtitle
-                                                                          className="mb-2 text-muted"
-                                                                        >
-                                                                          <ForwardRef
-                                                                            className="mb-2 text-muted card-subtitle"
-                                                                          >
-                                                                            <div
-                                                                              className="mb-2 text-muted card-subtitle h6"
-                                                                            >
-                                                                              <FormattedMessage
-                                                                                defaultMessage="e-Commerce Java Development Support Intern"
-                                                                                id="work.ibm_intern"
-                                                                                values={Object {}}
-                                                                              >
-                                                                                e-Commerce Java Development Support Intern
-                                                                              </FormattedMessage>
-                                                                              <span
-                                                                                className="info-item"
-                                                                              >
-                                                                                ·
-                                                                              </span>
-                                                                              <FormattedMessage
-                                                                                defaultMessage="May 2016 – Apr 2018"
-                                                                                id="work.ibm_work_period"
-                                                                                values={Object {}}
-                                                                              >
-                                                                                May 2016 – Apr 2018
-                                                                              </FormattedMessage>
-                                                                            </div>
-                                                                          </ForwardRef>
-                                                                        </CardSubtitle>
-                                                                        <CardSubtitle
-                                                                          className="mb-2 text-muted"
-                                                                        >
-                                                                          <ForwardRef
-                                                                            className="mb-2 text-muted card-subtitle"
-                                                                          >
-                                                                            <div
-                                                                              className="mb-2 text-muted card-subtitle h6"
-                                                                            >
-                                                                              <FormattedMessage
-                                                                                defaultMessage="Toronto, Canada"
-                                                                                id="work.toronto_ca"
-                                                                                values={Object {}}
-                                                                              >
-                                                                                Toronto, Canada
-                                                                              </FormattedMessage>
-                                                                            </div>
-                                                                          </ForwardRef>
-                                                                        </CardSubtitle>
-                                                                        <ListGroup
-                                                                          className="ibm"
-                                                                          horizontal={null}
-                                                                          variant="flush"
-                                                                        >
-                                                                          <ForwardRef
-                                                                            as="div"
-                                                                            className="ibm list-group list-group-flush"
-                                                                            onSelect={[Function]}
-                                                                          >
-                                                                            <div
-                                                                              className="ibm list-group list-group-flush"
-                                                                              onKeyDown={[Function]}
-                                                                            />
-                                                                          </ForwardRef>
-                                                                        </ListGroup>
-                                                                      </div>
-                                                                    </MediaBody>
-                                                                  </div>
-                                                                </Media>
-                                                              </div>
-                                                            </CardBody>
-                                                          </div>
-                                                        </Card>
-                                                      </div>
-                                                    </CarouselItem>
-                                                  </Transition>
-                                                  <Transition
-                                                    addEndListener={[Function]}
-                                                    appear={false}
-                                                    enter={true}
-                                                    exit={true}
-                                                    in={false}
-                                                    key=".3"
-                                                    mountOnEnter={false}
-                                                    onEnter={null}
-                                                    onEntered={null}
-                                                    onEntering={[Function]}
-                                                    onExit={[Function]}
-                                                    onExited={[Function]}
-                                                    onExiting={[Function]}
-                                                    unmountOnExit={false}
-                                                  >
-                                                    <CarouselItem
-                                                      className=""
-                                                    >
-                                                      <div
-                                                        className="carousel-item"
-                                                      >
-                                                        <Card
-                                                          body={false}
-                                                        >
-                                                          <div
-                                                            className="card"
-                                                          >
-                                                            <CardBody>
-                                                              <div
-                                                                className="card-body"
-                                                              >
-                                                                <Media>
-                                                                  <div
-                                                                    className="media"
-                                                                  >
-                                                                    <img
-                                                                      alt="Queen's University logo"
-                                                                      className="mr-3"
-                                                                      height={64}
-                                                                      src="test-file-stub"
-                                                                      width={64}
-                                                                    />
-                                                                    <MediaBody>
-                                                                      <div
-                                                                        className="media-body"
-                                                                      >
-                                                                        <CardTitle>
-                                                                          <ForwardRef
-                                                                            className="card-title"
-                                                                          >
-                                                                            <div
-                                                                              className="card-title h5"
-                                                                            >
-                                                                              <CardLink
-                                                                                href="http://www.queensu.ca/"
-                                                                                target="_blank"
-                                                                              >
-                                                                                <a
-                                                                                  className="card-link"
-                                                                                  href="http://www.queensu.ca/"
-                                                                                  target="_blank"
-                                                                                >
-                                                                                  <FormattedMessage
-                                                                                    defaultMessage="Queen's University"
-                                                                                    id="work.queensu"
-                                                                                    values={Object {}}
-                                                                                  >
-                                                                                    Queen's University
-                                                                                  </FormattedMessage>
-                                                                                </a>
-                                                                              </CardLink>
-                                                                            </div>
-                                                                          </ForwardRef>
-                                                                        </CardTitle>
-                                                                        <CardSubtitle
-                                                                          className="mb-2 text-muted"
-                                                                        >
-                                                                          <ForwardRef
-                                                                            className="mb-2 text-muted card-subtitle"
-                                                                          >
-                                                                            <div
-                                                                              className="mb-2 text-muted card-subtitle h6"
-                                                                            >
-                                                                              <FormattedMessage
-                                                                                defaultMessage="Teaching Assistant"
-                                                                                id="work.queensu_ta"
-                                                                                values={Object {}}
-                                                                              >
-                                                                                Teaching Assistant
-                                                                              </FormattedMessage>
-                                                                              <span
-                                                                                className="info-item"
-                                                                              >
-                                                                                ·
-                                                                              </span>
-                                                                              <FormattedMessage
-                                                                                defaultMessage="Sep 2017 – Apr 2018"
-                                                                                id="work.queensu_work_period"
-                                                                                values={Object {}}
-                                                                              >
-                                                                                Sep 2017 – Apr 2018
-                                                                              </FormattedMessage>
-                                                                            </div>
-                                                                          </ForwardRef>
-                                                                        </CardSubtitle>
-                                                                        <CardSubtitle
-                                                                          className="mb-2 text-muted"
-                                                                        >
-                                                                          <ForwardRef
-                                                                            className="mb-2 text-muted card-subtitle"
-                                                                          >
-                                                                            <div
-                                                                              className="mb-2 text-muted card-subtitle h6"
-                                                                            >
-                                                                              <FormattedMessage
-                                                                                defaultMessage="Kingston, Ontario"
-                                                                                id="work.kingston_on"
-                                                                                values={Object {}}
-                                                                              >
-                                                                                Kingston, Ontario
-                                                                              </FormattedMessage>
-                                                                            </div>
-                                                                          </ForwardRef>
-                                                                        </CardSubtitle>
-                                                                        <ListGroup
-                                                                          className="queensu"
-                                                                          horizontal={null}
-                                                                          variant="flush"
-                                                                        >
-                                                                          <ForwardRef
-                                                                            as="div"
-                                                                            className="queensu list-group list-group-flush"
-                                                                            onSelect={[Function]}
-                                                                          >
-                                                                            <div
-                                                                              className="queensu list-group list-group-flush"
-                                                                              onKeyDown={[Function]}
-                                                                            />
-                                                                          </ForwardRef>
-                                                                        </ListGroup>
-                                                                      </div>
-                                                                    </MediaBody>
-                                                                  </div>
-                                                                </Media>
-                                                              </div>
-                                                            </CardBody>
-                                                          </div>
-                                                        </Card>
-                                                      </div>
-                                                    </CarouselItem>
-                                                  </Transition>
-                                                </div>
-                                              </div>
-                                            </Carousel>
-                                          </WorkExperience>
+                                                Loading...
+                                              </span>
+                                            </div>
+                                          </Spinner>
                                         </div>
                                       </Transition>
                                     </Fade>
@@ -1452,11 +989,13 @@ exports[`<App /> renders Home 1`] = `
                                               >
                                                 <CardLink
                                                   href="http://www.queensu.ca/"
+                                                  rel="noopener"
                                                   target="_blank"
                                                 >
                                                   <a
                                                     className="card-link"
                                                     href="http://www.queensu.ca/"
+                                                    rel="noopener"
                                                     target="_blank"
                                                   >
                                                     <CardImg
@@ -2149,8 +1688,306 @@ exports[`<App /> renders Home 1`] = `
                               </ForwardRef>
                             </TabContainer>
                           </Tabs>
-                        </main>
+                        </section>
                       </About>
+                      <Contact>
+                        <section
+                          className="contact-form"
+                        >
+                          <h1
+                            className="contact"
+                          >
+                            <FormattedMessage
+                              defaultMessage="Contact me"
+                              id="contact.contact_me"
+                              values={Object {}}
+                            >
+                              Contact me
+                            </FormattedMessage>
+                          </h1>
+                          <Form
+                            className="contact"
+                            inline={false}
+                            method="post"
+                            name="contact"
+                            noValidate={true}
+                            onSubmit={[Function]}
+                            validated={false}
+                          >
+                            <form
+                              className="contact"
+                              method="post"
+                              name="contact"
+                              noValidate={true}
+                              onSubmit={[Function]}
+                            >
+                              <FormGroup
+                                controlId="formNameEmail"
+                              >
+                                <div
+                                  className="form-group"
+                                >
+                                  <FormRow>
+                                    <div
+                                      className="form-row"
+                                    >
+                                      <Col>
+                                        <div
+                                          className="col"
+                                        >
+                                          <FormLabel
+                                            column={false}
+                                            srOnly={false}
+                                          >
+                                            <label
+                                              className="form-label"
+                                              htmlFor="formNameEmail"
+                                            >
+                                              <FormattedMessage
+                                                defaultMessage="Name"
+                                                id="contact.name"
+                                                values={Object {}}
+                                              >
+                                                Name
+                                              </FormattedMessage>
+                                            </label>
+                                          </FormLabel>
+                                          <FormControl
+                                            name="name"
+                                            onChange={[Function]}
+                                            placeholder="Name"
+                                            required={true}
+                                            type="text"
+                                            value=""
+                                          >
+                                            <input
+                                              className="form-control"
+                                              id="formNameEmail"
+                                              name="name"
+                                              onChange={[Function]}
+                                              placeholder="Name"
+                                              required={true}
+                                              type="text"
+                                              value=""
+                                            />
+                                          </FormControl>
+                                          <Feedback
+                                            type="invalid"
+                                          >
+                                            <div
+                                              className="invalid-feedback"
+                                            >
+                                              <FormattedMessage
+                                                defaultMessage="Please enter your name."
+                                                id="contact.invalid_name"
+                                                values={Object {}}
+                                              >
+                                                Please enter your name.
+                                              </FormattedMessage>
+                                            </div>
+                                          </Feedback>
+                                        </div>
+                                      </Col>
+                                      <Col>
+                                        <div
+                                          className="col"
+                                        >
+                                          <FormLabel
+                                            column={false}
+                                            srOnly={false}
+                                          >
+                                            <label
+                                              className="form-label"
+                                              htmlFor="formNameEmail"
+                                            >
+                                              <FormattedMessage
+                                                defaultMessage="Email address"
+                                                id="contact.email"
+                                                values={Object {}}
+                                              >
+                                                Email address
+                                              </FormattedMessage>
+                                            </label>
+                                          </FormLabel>
+                                          <FormControl
+                                            name="email"
+                                            onChange={[Function]}
+                                            placeholder="Enter email"
+                                            required={true}
+                                            type="email"
+                                            value=""
+                                          >
+                                            <input
+                                              className="form-control"
+                                              id="formNameEmail"
+                                              name="email"
+                                              onChange={[Function]}
+                                              placeholder="Enter email"
+                                              required={true}
+                                              type="email"
+                                              value=""
+                                            />
+                                          </FormControl>
+                                          <Feedback
+                                            type="invalid"
+                                          >
+                                            <div
+                                              className="invalid-feedback"
+                                            >
+                                              <FormattedMessage
+                                                defaultMessage="Please provide a valid email."
+                                                id="contact.invalid_email"
+                                                values={Object {}}
+                                              >
+                                                Please provide a valid email.
+                                              </FormattedMessage>
+                                            </div>
+                                          </Feedback>
+                                        </div>
+                                      </Col>
+                                    </div>
+                                  </FormRow>
+                                </div>
+                              </FormGroup>
+                              <FormGroup
+                                controlId="formMessage"
+                              >
+                                <div
+                                  className="form-group"
+                                >
+                                  <FormLabel
+                                    column={false}
+                                    srOnly={false}
+                                  >
+                                    <label
+                                      className="form-label"
+                                      htmlFor="formMessage"
+                                    >
+                                      <FormattedMessage
+                                        defaultMessage="Message"
+                                        id="contact.message"
+                                        values={Object {}}
+                                      >
+                                        Message
+                                      </FormattedMessage>
+                                    </label>
+                                  </FormLabel>
+                                  <FormControl
+                                    as="textarea"
+                                    name="message"
+                                    onChange={[Function]}
+                                    required={true}
+                                    rows="3"
+                                    value=""
+                                  >
+                                    <textarea
+                                      className="form-control"
+                                      id="formMessage"
+                                      name="message"
+                                      onChange={[Function]}
+                                      required={true}
+                                      rows="3"
+                                      value=""
+                                    />
+                                  </FormControl>
+                                  <Feedback
+                                    type="invalid"
+                                  >
+                                    <div
+                                      className="invalid-feedback"
+                                    >
+                                      <FormattedMessage
+                                        defaultMessage="Please enter a message."
+                                        id="contact.invalid_message"
+                                        values={Object {}}
+                                      >
+                                        Please enter a message.
+                                      </FormattedMessage>
+                                    </div>
+                                  </Feedback>
+                                </div>
+                              </FormGroup>
+                              <Button
+                                active={false}
+                                className="submit-button"
+                                disabled={false}
+                                type="submit"
+                                variant="dark"
+                              >
+                                <button
+                                  className="submit-button btn btn-dark"
+                                  disabled={false}
+                                  type="submit"
+                                >
+                                  <FormattedMessage
+                                    defaultMessage="Submit"
+                                    id="contact.submit"
+                                    values={Object {}}
+                                  >
+                                    Submit
+                                  </FormattedMessage>
+                                </button>
+                              </Button>
+                            </form>
+                          </Form>
+                          <Bootstrap(Modal)
+                            onHide={[Function]}
+                            show={false}
+                          >
+                            <Modal
+                              animation={true}
+                              autoFocus={true}
+                              backdrop={true}
+                              bsPrefix="modal"
+                              dialogAs={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "displayName": "ModalDialog",
+                                  "render": [Function],
+                                }
+                              }
+                              enforceFocus={true}
+                              keyboard={true}
+                              onHide={[Function]}
+                              restoreFocus={true}
+                              show={false}
+                            >
+                              <Modal
+                                autoFocus={true}
+                                backdrop={true}
+                                backdropTransition={[Function]}
+                                className="modal"
+                                containerClassName="modal-open"
+                                enforceFocus={true}
+                                keyboard={true}
+                                manager={
+                                  BootstrapModalManager {
+                                    "adjustAndStore": [Function],
+                                    "containers": Array [],
+                                    "data": Array [],
+                                    "handleContainerOverflow": true,
+                                    "hideSiblingNodes": true,
+                                    "modals": Array [],
+                                    "restore": [Function],
+                                    "scrollbarSize": 0,
+                                  }
+                                }
+                                onClick={[Function]}
+                                onEnter={[Function]}
+                                onEntering={[Function]}
+                                onExited={[Function]}
+                                onHide={[Function]}
+                                onMouseUp={[Function]}
+                                renderBackdrop={[Function]}
+                                restoreFocus={true}
+                                show={false}
+                                style={Object {}}
+                                transition={[Function]}
+                              />
+                            </Modal>
+                          </Bootstrap(Modal)>
+                        </section>
+                      </Contact>
                     </main>
                     <Footer>
                       <footer
@@ -2169,20 +2006,121 @@ exports[`<App /> renders Home 1`] = `
                           </span>
                           .
                         </p>
-                        <a
-                          href="http://www.linkedin.com/in/erichsuanlee"
+                        <Container
+                          className="contact-item-container"
+                          fluid={false}
                         >
-                          <span
-                            className="dot icon-linkedin"
-                          />
-                        </a>
-                        <a
-                          href="http://github.com/ericlee1995"
-                        >
-                          <span
-                            className="dot icon-github"
-                          />
-                        </a>
+                          <div
+                            className="contact-item-container container"
+                          >
+                            <Row
+                              noGutters={false}
+                            >
+                              <div
+                                className="row"
+                              >
+                                <Col>
+                                  <div
+                                    className="col"
+                                  >
+                                    <Button
+                                      active={false}
+                                      className="contact-item icon-mail-alt"
+                                      disabled={false}
+                                      href="mailto:hsuan9528@gmail.com"
+                                      type="button"
+                                      variant="outline-light"
+                                    >
+                                      <SafeAnchor
+                                        className="contact-item icon-mail-alt btn btn-outline-light"
+                                        disabled={false}
+                                        href="mailto:hsuan9528@gmail.com"
+                                      >
+                                        <a
+                                          className="contact-item icon-mail-alt btn btn-outline-light"
+                                          href="mailto:hsuan9528@gmail.com"
+                                          onClick={[Function]}
+                                          onKeyDown={[Function]}
+                                        >
+                                          Email
+                                        </a>
+                                      </SafeAnchor>
+                                    </Button>
+                                    <Button
+                                      active={false}
+                                      className="contact-item icon-linkedin"
+                                      disabled={false}
+                                      href="http://www.linkedin.com/in/erichsuanlee"
+                                      type="button"
+                                      variant="outline-light"
+                                    >
+                                      <SafeAnchor
+                                        className="contact-item icon-linkedin btn btn-outline-light"
+                                        disabled={false}
+                                        href="http://www.linkedin.com/in/erichsuanlee"
+                                      >
+                                        <a
+                                          className="contact-item icon-linkedin btn btn-outline-light"
+                                          href="http://www.linkedin.com/in/erichsuanlee"
+                                          onClick={[Function]}
+                                          onKeyDown={[Function]}
+                                        >
+                                          LinkedIn
+                                        </a>
+                                      </SafeAnchor>
+                                    </Button>
+                                    <Button
+                                      active={false}
+                                      className="contact-item icon-github"
+                                      disabled={false}
+                                      href="http://github.com/ericlee1995"
+                                      type="button"
+                                      variant="outline-light"
+                                    >
+                                      <SafeAnchor
+                                        className="contact-item icon-github btn btn-outline-light"
+                                        disabled={false}
+                                        href="http://github.com/ericlee1995"
+                                      >
+                                        <a
+                                          className="contact-item icon-github btn btn-outline-light"
+                                          href="http://github.com/ericlee1995"
+                                          onClick={[Function]}
+                                          onKeyDown={[Function]}
+                                        >
+                                          GitHub
+                                        </a>
+                                      </SafeAnchor>
+                                    </Button>
+                                    <Button
+                                      active={false}
+                                      className="contact-item icon-instagram"
+                                      disabled={false}
+                                      href="http://www.instagram.com/eric.hlee/"
+                                      type="button"
+                                      variant="outline-light"
+                                    >
+                                      <SafeAnchor
+                                        className="contact-item icon-instagram btn btn-outline-light"
+                                        disabled={false}
+                                        href="http://www.instagram.com/eric.hlee/"
+                                      >
+                                        <a
+                                          className="contact-item icon-instagram btn btn-outline-light"
+                                          href="http://www.instagram.com/eric.hlee/"
+                                          onClick={[Function]}
+                                          onKeyDown={[Function]}
+                                        >
+                                          Instagram
+                                        </a>
+                                      </SafeAnchor>
+                                    </Button>
+                                  </div>
+                                </Col>
+                              </div>
+                            </Row>
+                          </div>
+                        </Container>
                       </footer>
                     </Footer>
                   </Home>
@@ -2211,6 +2149,17 @@ exports[`<App /> renders IntlProvider, NavBar, BrowserRouter, Switch and Route 1
         "about.education": "🎓 Education",
         "about.key_skills": "🧰 Key Skills",
         "about.work_experience": "📃 Work Experience",
+        "contact.close": "Close",
+        "contact.contact_me": "Contact me",
+        "contact.email": "Email address",
+        "contact.invalid_email": "Please provide a valid email.",
+        "contact.invalid_message": "Please enter a message.",
+        "contact.invalid_name": "Please enter your name.",
+        "contact.message": "Message",
+        "contact.name": "Name",
+        "contact.submit": "Submit",
+        "contact.success": "🎉 Success!",
+        "contact.success_message": "If necessary, I will respond to you as soon as possible.",
         "education.deans_list": "Dean’s Honour List 2017-18",
         "education.degree": "Bachelor of Computing (Honours)",
         "education.program": "Specialization in Software Design with Professional Internship",
@@ -2227,7 +2176,10 @@ exports[`<App /> renders IntlProvider, NavBar, BrowserRouter, Switch and Route 1
         "home.life_as_dev_7": "🆕Open for new opportunities!",
         "home.resume": "Resume",
         "home.whoami": "My name is Eric.",
+        "navbar.chat_app": "'Echo' Chat App",
+        "navbar.portfolio": "Portfolio",
         "navbar.text": "Eric Lee",
+        "navbar.to_be_updated": "To be updated...",
         "work.conv": "Conversocial",
         "work.conv_jse": "Junior Software Engineer",
         "work.conv_work_period": "May 2019 – Apr 2020",
@@ -2251,6 +2203,10 @@ exports[`<App /> renders IntlProvider, NavBar, BrowserRouter, Switch and Route 1
     <NavBar />
     <BrowserRouter>
       <Switch>
+        <Route
+          component={[Function]}
+          path="/chat_app"
+        />
         <Route
           component={[Function]}
           exact={true}

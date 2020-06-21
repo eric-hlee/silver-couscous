@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`History should render self and subcomponents 1`] = `
+<div
+  className="History"
+  style={
+    Object {
+      "height": "600px",
+      "overflow": "auto",
+    }
+  }
+>
+  <div
+    className="ChatList"
+  >
+    <Connect(ChatCard)
+      id={0}
+      key="0"
+    />
+  </div>
+</div>
+`;

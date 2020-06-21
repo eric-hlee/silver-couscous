@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeleteButton should render self and subcomponents 1`] = `
+<button
+  style={
+    Object {
+      "border": "1px solid #555555",
+      "boxShadow": "1px 2px",
+      "cursor": "pointer",
+      "display": "inline",
+      "float": "right",
+      "fontSize": "12px",
+      "overflow": "hidden",
+      "position": "absolute",
+    }
+  }
+>
+  X
+</button>
+`;

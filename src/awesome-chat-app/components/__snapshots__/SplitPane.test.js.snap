@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SplitPane should render self and subcomponents 1`] = `
+<div
+  className="SplitPane"
+  style={
+    Object {
+      "border": "1px solid silver",
+      "borderTop": "0",
+      "display": "flex",
+      "flexDirection": "row",
+      "height": "100%",
+      "overflow": "hidden",
+    }
+  }
+>
+  <div
+    className="SplitPane-left"
+    style={
+      Object {
+        "border": "1px solid #555555",
+        "borderRight": "0",
+        "flex": "auto",
+        "minHeight": "500px",
+        "minWidth": "150px",
+        "padding": "10px",
+        "width": "30%",
+      }
+    }
+  />
+  <div
+    className="SplitPane-right"
+    style={
+      Object {
+        "border": "1px solid #555555",
+        "flex": "auto",
+        "minHeight": "auto",
+        "minWidth": "1024px",
+        "overflow": "auto",
+        "padding": "10px",
+        "position": "relative",
+        "width": "70%",
+      }
+    }
+  />
+</div>
+`;

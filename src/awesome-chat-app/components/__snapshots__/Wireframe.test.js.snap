@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wireframe component it matches the snapshot 1`] = `
+<div
+  className="Wireframe"
+  style={
+    Object {
+      "height": "100%",
+      "minHeight": "100%",
+      "overflow": "hidden",
+    }
+  }
+>
+  <Connect(Header)
+    title="An awesome chat app using Redux"
+  />
+  <SplitPane
+    left={<UNDEFINED />}
+    right={<UNDEFINED />}
+  />
+</div>
+`;

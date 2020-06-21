@@ -6,6 +6,7 @@ exports[`<Education /> renders correctly 1`] = `
 >
   <CardLink
     href="http://www.queensu.ca/"
+    rel="noopener"
     target="_blank"
   >
     <CardImg

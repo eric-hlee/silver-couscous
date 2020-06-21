@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Contact /> renders correctly 1`] = `
+<section
+  className="contact-form"
+>
+  <h1
+    className="contact"
+  >
+    <FormattedMessage
+      defaultMessage="Contact me"
+      id="contact.contact_me"
+      values={Object {}}
+    />
+  </h1>
+  <Form
+    className="contact"
+    inline={false}
+    method="post"
+    name="contact"
+    noValidate={true}
+    onSubmit={[Function]}
+    validated={false}
+  >
+    <FormGroup
+      controlId="formNameEmail"
+    >
+      <FormRow>
+        <Col>
+          <FormLabel
+            column={false}
+            srOnly={false}
+          >
+            <FormattedMessage
+              defaultMessage="Name"
+              id="contact.name"
+              values={Object {}}
+            />
+          </FormLabel>
+          <FormControl
+            name="name"
+            onChange={[Function]}
+            placeholder="Name"
+            required={true}
+            type="text"
+            value=""
+          />
+          <Feedback
+            type="invalid"
+          >
+            <FormattedMessage
+              defaultMessage="Please enter your name."
+              id="contact.invalid_name"
+              values={Object {}}
+            />
+          </Feedback>
+        </Col>
+        <Col>
+          <FormLabel
+            column={false}
+            srOnly={false}
+          >
+            <FormattedMessage
+              defaultMessage="Email address"
+              id="contact.email"
+              values={Object {}}
+            />
+          </FormLabel>
+          <FormControl
+            name="email"
+            onChange={[Function]}
+            placeholder="Enter email"
+            required={true}
+            type="email"
+            value=""
+          />
+          <Feedback
+            type="invalid"
+          >
+            <FormattedMessage
+              defaultMessage="Please provide a valid email."
+              id="contact.invalid_email"
+              values={Object {}}
+            />
+          </Feedback>
+        </Col>
+      </FormRow>
+    </FormGroup>
+    <FormGroup
+      controlId="formMessage"
+    >
+      <FormLabel
+        column={false}
+        srOnly={false}
+      >
+        <FormattedMessage
+          defaultMessage="Message"
+          id="contact.message"
+          values={Object {}}
+        />
+      </FormLabel>
+      <FormControl
+        as="textarea"
+        name="message"
+        onChange={[Function]}
+        required={true}
+        rows="3"
+        value=""
+      />
+      <Feedback
+        type="invalid"
+      >
+        <FormattedMessage
+          defaultMessage="Please enter a message."
+          id="contact.invalid_message"
+          values={Object {}}
+        />
+      </Feedback>
+    </FormGroup>
+    <Button
+      active={false}
+      className="submit-button"
+      disabled={false}
+      type="submit"
+      variant="dark"
+    >
+      <FormattedMessage
+        defaultMessage="Submit"
+        id="contact.submit"
+        values={Object {}}
+      />
+    </Button>
+  </Form>
+  <Bootstrap(Modal)
+    onHide={[Function]}
+    show={false}
+  >
+    <ModalHeader
+      closeButton={true}
+      closeLabel="Close"
+    >
+      <ModalTitle>
+        <FormattedMessage
+          defaultMessage="🎉 Success!"
+          id="contact.success"
+          values={Object {}}
+        />
+      </ModalTitle>
+    </ModalHeader>
+    <ModalBody>
+      <p>
+        <FormattedMessage
+          defaultMessage="If necessary, I will respond to you as soon as possible."
+          id="contact.success_message"
+          values={Object {}}
+        />
+      </p>
+    </ModalBody>
+    <ModalFooter>
+      <Button
+        active={false}
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+        variant="secondary"
+      >
+        <FormattedMessage
+          defaultMessage="Close"
+          id="contact.close"
+          values={Object {}}
+        />
+      </Button>
+    </ModalFooter>
+  </Bootstrap(Modal)>
+</section>
+`;

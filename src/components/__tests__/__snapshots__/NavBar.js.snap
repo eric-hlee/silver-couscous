@@ -2,10 +2,10 @@
 
 exports[`<NavBar /> renders correctly 1`] = `
 <Navbar
-  bg="light"
+  bg="dark"
   collapseOnSelect={false}
-  expand="lg"
-  variant="light"
+  expand="sm"
+  variant="dark"
 >
   <NavbarBrand
     href="/"
@@ -17,8 +17,67 @@ exports[`<NavBar /> renders correctly 1`] = `
     />
   </NavbarBrand>
   <NavbarToggle
-    aria-controls="basic-navbar-nav"
     label="Toggle navigation"
   />
+  <NavbarCollapse
+    className="justify-content-end"
+  >
+    <Nav
+      className="mr-auto"
+      fill={false}
+      justify={false}
+    >
+      <NavDropdown
+        id="portfolio-dropdown"
+        title={
+          <FormattedMessage
+            defaultMessage="Portfolio"
+            id="navbar.portfolio"
+            values={Object {}}
+          />
+        }
+      >
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "displayName": "SafeAnchor",
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          href="/chat_app"
+        >
+          <FormattedMessage
+            defaultMessage="Echo Chat App"
+            id="navbar.chat_app"
+            values={Object {}}
+          />
+        </DropdownItem>
+        <DropdownDivider
+          role="separator"
+        />
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "displayName": "SafeAnchor",
+              "render": [Function],
+            }
+          }
+          disabled={true}
+        >
+          <FormattedMessage
+            defaultMessage="To be updated..."
+            id="navbar.to_be_updated"
+            values={Object {}}
+          />
+        </DropdownItem>
+      </NavDropdown>
+    </Nav>
+    <NavbarText
+      data-netlify-identity-menu={true}
+    />
+  </NavbarCollapse>
 </Navbar>
 `;

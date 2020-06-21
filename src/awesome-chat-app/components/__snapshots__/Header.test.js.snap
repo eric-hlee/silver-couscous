@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render self and subcomponents 1`] = `
+<div
+  className="Header"
+  style={
+    Object {
+      "border": "1px solid black",
+      "borderBottom": "0",
+    }
+  }
+>
+  <div
+    className="Headline"
+    style={
+      Object {
+        "marginTop": "0.5rem",
+        "textAlign": "center",
+      }
+    }
+  >
+    <h1 />
+  </div>
+  <div
+    className="Button"
+  >
+    <button
+      style={
+        Object {
+          "border": "1px solid #555555",
+          "borderRadius": "12px",
+          "cursor": "pointer",
+          "fontSize": "16px",
+          "margin": "0px 0px 10px 10px",
+          "padding": "10px 24px",
+        }
+      }
+    >
+      Add chat
+    </button>
+  </div>
+</div>
+`;
