@@ -1,10 +1,11 @@
 import React from 'react'
+import Button from 'react-bootstrap/Button'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import { FormattedMessage } from 'react-intl'
 
-export default function NavBar() {
+export default function NavBar(props) {
   return (
     <Navbar bg="dark" variant="dark" expand="sm">
       <Navbar.Brand href="/">
@@ -37,7 +38,16 @@ export default function NavBar() {
             </NavDropdown.Item>
           </NavDropdown>
         </Nav>
-        <Navbar.Text data-netlify-identity-menu />
+        <Nav>
+          <Button
+            variant="dark"
+            onClick={() =>
+              props.onChangeLanguage(props.language === 'en' ? 'zh' : 'en')
+            }
+          >
+            {props.language === 'en' ? '中文' : 'English'}
+          </Button>
+        </Nav>
       </Navbar.Collapse>
     </Navbar>
   )

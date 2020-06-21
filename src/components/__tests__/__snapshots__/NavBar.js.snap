@@ -75,9 +75,20 @@ exports[`<NavBar /> renders correctly 1`] = `
         </DropdownItem>
       </NavDropdown>
     </Nav>
-    <NavbarText
-      data-netlify-identity-menu={true}
-    />
+    <Nav
+      fill={false}
+      justify={false}
+    >
+      <Button
+        active={false}
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+        variant="dark"
+      >
+        English
+      </Button>
+    </Nav>
   </NavbarCollapse>
 </Navbar>
 `;

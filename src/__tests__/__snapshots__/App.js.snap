@@ -108,7 +108,10 @@ exports[`<App /> renders Home 1`] = `
           onError={[Function]}
           textComponent={Symbol(react.fragment)}
         >
-          <NavBar>
+          <NavBar
+            language="en"
+            onChangeLanguage={[Function]}
+          >
             <Navbar
               bg="dark"
               collapseOnSelect={false}
@@ -323,14 +326,38 @@ exports[`<App /> renders Home 1`] = `
                             </div>
                           </ForwardRef>
                         </Nav>
-                        <NavbarText
-                          data-netlify-identity-menu={true}
+                        <Nav
+                          fill={false}
+                          justify={false}
                         >
-                          <span
-                            className="navbar-text"
-                            data-netlify-identity-menu={true}
-                          />
-                        </NavbarText>
+                          <ForwardRef
+                            as="div"
+                            className="navbar-nav"
+                            onSelect={[Function]}
+                          >
+                            <div
+                              className="navbar-nav"
+                              onKeyDown={[Function]}
+                            >
+                              <Button
+                                active={false}
+                                disabled={false}
+                                onClick={[Function]}
+                                type="button"
+                                variant="dark"
+                              >
+                                <button
+                                  className="btn btn-dark"
+                                  disabled={false}
+                                  onClick={[Function]}
+                                  type="button"
+                                >
+                                  中文
+                                </button>
+                              </Button>
+                            </div>
+                          </ForwardRef>
+                        </Nav>
                       </div>
                     </Transition>
                   </Collapse>
@@ -2200,7 +2227,10 @@ exports[`<App /> renders IntlProvider, NavBar, BrowserRouter, Switch and Route 1
     onError={[Function]}
     textComponent={Symbol(react.fragment)}
   >
-    <NavBar />
+    <NavBar
+      language="en"
+      onChangeLanguage={[Function]}
+    />
     <BrowserRouter>
       <Switch>
         <Route
