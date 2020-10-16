@@ -1,28 +1,21 @@
-import React, { useState, useEffect } from 'react'
-import { FormattedMessage } from 'react-intl'
-import Spinner from 'react-bootstrap/Spinner'
-import Tabs from 'react-bootstrap/Tabs'
-import Tab from 'react-bootstrap/Tab'
-import WorkExperience from './WorkExperience'
-import Education from './Education'
-import KeySkills from './KeySkills'
+import React, { useState } from 'react';
+import { FormattedMessage } from 'react-intl';
+import Spinner from 'react-bootstrap/Spinner';
+import Tabs from 'react-bootstrap/Tabs';
+import Tab from 'react-bootstrap/Tab';
+import useSWR from 'swr';
+import WorkExperience from './WorkExperience';
+import Education from './Education';
+import KeySkills from './KeySkills';
 
-export default function About () {
-  const [isLoading, setLoading] = useState(true)
+export default function About() {
+  const [isLoading, setLoading] = useState(true);
   const [workDescriptions, setWorkDescriptions] = useState({
     conversocial: null,
     verv: null,
     ibm: null,
-    queensu: null
-  })
-
-  const getWorkDescriptions = async () => {
-    const response = await fetch(
-      'https://morning-garden-95959.herokuapp.com/about'
-    )
-    const data = await response.json()
-    return data
-  }
+    queensu: null,
+  });
 
   const spinner = () => (
     <Spinner
@@ -33,24 +26,28 @@ export default function About () {
     >
       <span className="sr-only">Loading...</span>
     </Spinner>
-  )
+  );
 
-  useEffect(() => {
-    getWorkDescriptions()
+  const fetcher = (...args) =>
+    fetch(...args)
+      .then((res) => res.json())
       .then((res) => res[0])
       .then((res) => {
-        setLoading(false)
+        setLoading(false);
         setWorkDescriptions({
           conversocial: res.conversocial,
           verv: res.verv,
           ibm: res.ibm,
-          queensu: res.queensu
-        })
-      })
-      .catch((err) => {
-        console.log(err)
-      })
-  }, [])
+          queensu: res.queensu,
+        });
+      });
+
+  const { error } = useSWR(
+    'https://morning-garden-95959.herokuapp.com/about',
+    fetcher
+  );
+
+  if (error) console.log(error);
 
   return (
     <section>
@@ -94,5 +91,5 @@ export default function About () {
         </Tab>
       </Tabs>
     </section>
-  )
+  );
 }
