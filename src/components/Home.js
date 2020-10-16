@@ -11,9 +11,9 @@ import Contact from './Contact';
 import Footer from './Footer';
 
 export default function Home() {
-  const getLifeAsDevItem = (item) => {
+  const getLifeAsDevItem = (item, index) => {
     return (
-      <li>
+      <li key={index}>
         <FormattedMessage id={item.id} defaultMessage={item.defaultMessage} />
       </li>
     );
@@ -51,7 +51,7 @@ export default function Home() {
                 <Image
                   className="img-eric"
                   src={require('../assets/images/eric.jpg')}
-                  alt="Picture of Eric"
+                  alt="Eric"
                   height="180"
                   width="171"
                   fluid
