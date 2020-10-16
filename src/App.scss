@@ -1,13 +1,13 @@
 @import '~bootstrap/scss/bootstrap';
 
-$athens-gray: #F8F9FA;
-$blue-chill: #0E76A8;
-$cultured: #F9F8F8;
-$gallery: #EFEFEF;
+$athens-gray: #f8f9fa;
+$blue-chill: #0e76a8;
+$cultured: #f9f8f8;
+$gallery: #efefef;
 $gray: #808080;
 $home: url('./assets/images/home.jpg');
-$outer-space: #343A40;
-$white: #FFF;
+$outer-space: #343a40;
+$white: #fff;
 
 $contact-item-margin: 2px;
 $empty-content: '';
@@ -25,10 +25,20 @@ section {
   margin: $section-margin;
 }
 
+.about {
+  margin-top: 25vh;
+}
+
+.badge {
+  white-space: normal;
+}
+
 .card {
-  border-top: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  &.work {
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
 }
 
 .card-img-top {
@@ -111,6 +121,7 @@ section {
   background-size: cover;
   border-radius: 0;
   min-height: calc(100vh - 56px);
+  text-align: center;
 }
 
 .key-skills {
@@ -121,6 +132,13 @@ section {
 
 .loading {
   text-align: center;
+}
+
+.name {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 800;
+  margin: 1rem 0;
 }
 
 .nav-link {
@@ -155,7 +173,6 @@ section {
   border-radius: 4px;
   color: $white;
   padding: 15px;
-  position: relative;
 
   p {
     margin: $speech-bubble-p-margin;

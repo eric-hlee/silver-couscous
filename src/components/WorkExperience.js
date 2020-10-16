@@ -1,23 +1,23 @@
-import React, { useState } from 'react'
-import PropTypes from 'prop-types'
-import { FormattedMessage } from 'react-intl'
-import Card from 'react-bootstrap/Card'
-import Carousel from 'react-bootstrap/Carousel'
-import ListGroup from 'react-bootstrap/ListGroup'
-import Media from 'react-bootstrap/Media'
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import { FormattedMessage } from 'react-intl';
+import Card from 'react-bootstrap/Card';
+import Carousel from 'react-bootstrap/Carousel';
+import ListGroup from 'react-bootstrap/ListGroup';
+import Media from 'react-bootstrap/Media';
 
 export default function WorkExperience(props) {
-  const [index, setIndex] = useState(2)
+  const [index, setIndex] = useState(2);
 
   const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex)
-  }
+    setIndex(selectedIndex);
+  };
 
-  const { workDescriptions } = props
+  const { workDescriptions } = props;
   return (
     <Carousel activeIndex={index} controls={false} onSelect={handleSelect}>
       <Carousel.Item>
-        <Card>
+        <Card bsPrefix="card work">
           <Card.Body>
             <Media>
               <img
@@ -69,7 +69,7 @@ export default function WorkExperience(props) {
         </Card>
       </Carousel.Item>
       <Carousel.Item>
-        <Card>
+        <Card bsPrefix="card work">
           <Card.Body>
             <Media>
               <img
@@ -118,7 +118,7 @@ export default function WorkExperience(props) {
         </Card>
       </Carousel.Item>
       <Carousel.Item>
-        <Card>
+        <Card bsPrefix="card work">
           <Card.Body>
             <Media>
               <img
@@ -167,7 +167,7 @@ export default function WorkExperience(props) {
         </Card>
       </Carousel.Item>
       <Carousel.Item>
-        <Card>
+        <Card bsPrefix="card work">
           <Card.Body>
             <Media>
               <img
@@ -219,9 +219,9 @@ export default function WorkExperience(props) {
         </Card>
       </Carousel.Item>
     </Carousel>
-  )
+  );
 }
 
 WorkExperience.propTypes = {
   workDescriptions: PropTypes.object.isRequired,
-}
+};
