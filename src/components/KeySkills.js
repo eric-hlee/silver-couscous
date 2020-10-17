@@ -24,12 +24,12 @@ export default function KeySkills() {
           <Card.Title>Library/Frameworks:</Card.Title>
           <ListGroup horizontal="sm">
             {[
-              'ReactJS',
+              'React',
               'Redux',
               'React-Router',
               'React Intl',
-              'ExpressJS',
-              'DraftJS',
+              'Node.js',
+              'Draft.js',
               'Jest',
               'Enzyme',
             ].map(getSkillItem)}
