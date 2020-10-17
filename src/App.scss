@@ -38,6 +38,7 @@ section {
     border-top: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    min-height: 80vh;
   }
 }
 
@@ -46,8 +47,6 @@ section {
 }
 
 .carousel-indicators {
-  bottom: -10px;
-
   li {
     background-color: $gray;
   }
