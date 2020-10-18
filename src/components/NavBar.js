@@ -1,11 +1,38 @@
-import React from 'react'
-import Button from 'react-bootstrap/Button'
-import Nav from 'react-bootstrap/Nav'
-import Navbar from 'react-bootstrap/Navbar'
-import NavDropdown from 'react-bootstrap/NavDropdown'
-import { FormattedMessage } from 'react-intl'
+import React from 'react';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { FormattedMessage } from 'react-intl';
 
 export default function NavBar(props) {
+  const languageMapping = {
+    en: 'English',
+    'zh-CN': '简体中文',
+    'zh-TW': '繁體中文',
+  };
+
+  const selectLanguageMapping = {
+    en: 'Select langauge',
+    'zh-CN': '选择语言',
+    'zh-TW': '選擇語言',
+  };
+
+  const getLanguageItem = (lang, index) => {
+    if (lang !== props.language) {
+      return (
+        <Dropdown.Item
+          key={index}
+          as="button"
+          onClick={() => props.onChangeLanguage(lang)}
+        >
+          {languageMapping[lang]}
+        </Dropdown.Item>
+      );
+    }
+  };
+
   return (
     <Navbar bg="dark" variant="dark" expand="sm">
       <Navbar.Brand href="/">
@@ -39,16 +66,15 @@ export default function NavBar(props) {
           </NavDropdown>
         </Nav>
         <Nav>
-          <Button
-            variant="dark"
-            onClick={() =>
-              props.onChangeLanguage(props.language === 'en' ? 'zh' : 'en')
-            }
+          <DropdownButton
+            id="dropdown-item-button"
+            title={selectLanguageMapping[props.language]}
+            variant="secondary"
           >
-            {props.language === 'en' ? '中文' : 'English'}
-          </Button>
+            {['en', 'zh-CN', 'zh-TW'].map(getLanguageItem)}
+          </DropdownButton>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-  )
+  );
 }
