@@ -12,12 +12,16 @@ import About from './About';
 import Contact from './Contact';
 import Footer from './Footer';
 
+const getFormattedMessageFixed = (props) => {
+  return <FormattedMessage {...props} />;
+};
+
 export default function Home() {
   const getLifeAsDevItem = (item, index) => {
+    const id = item.id;
+    const defaultMessage = item.defaultMessage ?? '';
     return (
-      <li key={index}>
-        <FormattedMessage id={item.id} defaultMessage={item.defaultMessage} />
-      </li>
+      <li key={index}>{getFormattedMessageFixed({ id, defaultMessage })}</li>
     );
   };
 

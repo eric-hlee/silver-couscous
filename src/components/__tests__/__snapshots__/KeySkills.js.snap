@@ -14,26 +14,25 @@ exports[`<KeySkills /> renders correctly 1`] = `
       </CardTitle>
       <ListGroup
         horizontal="sm"
-        variant={null}
       >
         <ListGroupItem
           active={false}
           disabled={false}
-          variant={null}
+          key="0"
         >
           Python
         </ListGroupItem>
         <ListGroupItem
           active={false}
           disabled={false}
-          variant={null}
+          key="1"
         >
           Java
         </ListGroupItem>
         <ListGroupItem
           active={false}
           disabled={false}
-          variant={null}
+          key="2"
         >
           Bash
         </ListGroupItem>
@@ -44,40 +43,39 @@ exports[`<KeySkills /> renders correctly 1`] = `
       </CardTitle>
       <ListGroup
         horizontal="sm"
-        variant={null}
       >
         <ListGroupItem
           active={false}
           disabled={false}
-          variant={null}
+          key="0"
         >
           HTML
         </ListGroupItem>
         <ListGroupItem
           active={false}
           disabled={false}
-          variant={null}
+          key="1"
         >
           CSS
         </ListGroupItem>
         <ListGroupItem
           active={false}
           disabled={false}
-          variant={null}
+          key="2"
         >
           Sass
         </ListGroupItem>
         <ListGroupItem
           active={false}
           disabled={false}
-          variant={null}
+          key="3"
         >
           JavaScript
         </ListGroupItem>
         <ListGroupItem
           active={false}
           disabled={false}
-          variant={null}
+          key="4"
         >
           SQL
         </ListGroupItem>
@@ -88,61 +86,60 @@ exports[`<KeySkills /> renders correctly 1`] = `
       </CardTitle>
       <ListGroup
         horizontal="sm"
-        variant={null}
       >
         <ListGroupItem
           active={false}
           disabled={false}
-          variant={null}
+          key="0"
         >
-          ReactJS
+          React
         </ListGroupItem>
         <ListGroupItem
           active={false}
           disabled={false}
-          variant={null}
+          key="1"
         >
           Redux
         </ListGroupItem>
         <ListGroupItem
           active={false}
           disabled={false}
-          variant={null}
+          key="2"
         >
           React-Router
         </ListGroupItem>
         <ListGroupItem
           active={false}
           disabled={false}
-          variant={null}
+          key="3"
         >
           React Intl
         </ListGroupItem>
         <ListGroupItem
           active={false}
           disabled={false}
-          variant={null}
+          key="4"
         >
-          ExpressJS
+          Node.js
         </ListGroupItem>
         <ListGroupItem
           active={false}
           disabled={false}
-          variant={null}
+          key="5"
         >
-          DraftJS
+          Draft.js
         </ListGroupItem>
         <ListGroupItem
           active={false}
           disabled={false}
-          variant={null}
+          key="6"
         >
           Jest
         </ListGroupItem>
         <ListGroupItem
           active={false}
           disabled={false}
-          variant={null}
+          key="7"
         >
           Enzyme
         </ListGroupItem>
@@ -153,33 +150,32 @@ exports[`<KeySkills /> renders correctly 1`] = `
       </CardTitle>
       <ListGroup
         horizontal="sm"
-        variant={null}
       >
         <ListGroupItem
           active={false}
           disabled={false}
-          variant={null}
+          key="0"
         >
           Docker
         </ListGroupItem>
         <ListGroupItem
           active={false}
           disabled={false}
-          variant={null}
+          key="1"
         >
           Git
         </ListGroupItem>
         <ListGroupItem
           active={false}
           disabled={false}
-          variant={null}
+          key="2"
         >
           GitHub
         </ListGroupItem>
         <ListGroupItem
           active={false}
           disabled={false}
-          variant={null}
+          key="3"
         >
           Webpack
         </ListGroupItem>

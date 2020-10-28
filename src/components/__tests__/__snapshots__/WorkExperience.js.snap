@@ -32,6 +32,7 @@ exports[`<WorkExperience /> renders correctly 1`] = `
   <CarouselItem>
     <Card
       body={false}
+      bsPrefix="card work"
     >
       <CardBody>
         <Media>
@@ -52,7 +53,6 @@ exports[`<WorkExperience /> renders correctly 1`] = `
                 <FormattedMessage
                   defaultMessage="Conversocial"
                   id="work.conv"
-                  values={Object {}}
                 />
               </CardLink>
             </CardTitle>
@@ -62,7 +62,6 @@ exports[`<WorkExperience /> renders correctly 1`] = `
               <FormattedMessage
                 defaultMessage="Junior Software Engineer"
                 id="work.conv_jse"
-                values={Object {}}
               />
               <span
                 className="info-item"
@@ -72,7 +71,6 @@ exports[`<WorkExperience /> renders correctly 1`] = `
               <FormattedMessage
                 defaultMessage="May 2019 – Apr 2020"
                 id="work.conv_work_period"
-                values={Object {}}
               />
             </CardSubtitle>
             <CardSubtitle
@@ -81,19 +79,16 @@ exports[`<WorkExperience /> renders correctly 1`] = `
               <FormattedMessage
                 defaultMessage="London, United Kingdom"
                 id="work.london_uk"
-                values={Object {}}
               />
             </CardSubtitle>
             <ListGroup
               className="conversocial"
-              horizontal={null}
               variant="flush"
             >
               <ListGroupItem
                 active={false}
                 disabled={false}
                 key="0"
-                variant={null}
               >
                 work
               </ListGroupItem>
@@ -101,7 +96,6 @@ exports[`<WorkExperience /> renders correctly 1`] = `
                 active={false}
                 disabled={false}
                 key="1"
-                variant={null}
               >
                 work
               </ListGroupItem>
@@ -109,7 +103,6 @@ exports[`<WorkExperience /> renders correctly 1`] = `
                 active={false}
                 disabled={false}
                 key="2"
-                variant={null}
               >
                 work
               </ListGroupItem>
@@ -122,6 +115,7 @@ exports[`<WorkExperience /> renders correctly 1`] = `
   <CarouselItem>
     <Card
       body={false}
+      bsPrefix="card work"
     >
       <CardBody>
         <Media>
@@ -142,7 +136,6 @@ exports[`<WorkExperience /> renders correctly 1`] = `
                 <FormattedMessage
                   defaultMessage="Verv"
                   id="work.verv"
-                  values={Object {}}
                 />
               </CardLink>
             </CardTitle>
@@ -152,7 +145,6 @@ exports[`<WorkExperience /> renders correctly 1`] = `
               <FormattedMessage
                 defaultMessage="Technical Support Engineer"
                 id="work.verv_tse"
-                values={Object {}}
               />
               <span
                 className="info-item"
@@ -162,7 +154,6 @@ exports[`<WorkExperience /> renders correctly 1`] = `
               <FormattedMessage
                 defaultMessage="Oct 2018 – Apr 2019"
                 id="work.verv_work_period"
-                values={Object {}}
               />
             </CardSubtitle>
             <CardSubtitle
@@ -171,19 +162,16 @@ exports[`<WorkExperience /> renders correctly 1`] = `
               <FormattedMessage
                 defaultMessage="London, United Kingdom"
                 id="work.london_uk"
-                values={Object {}}
               />
             </CardSubtitle>
             <ListGroup
               className="verv"
-              horizontal={null}
               variant="flush"
             >
               <ListGroupItem
                 active={false}
                 disabled={false}
                 key="0"
-                variant={null}
               >
                 work
               </ListGroupItem>
@@ -191,7 +179,6 @@ exports[`<WorkExperience /> renders correctly 1`] = `
                 active={false}
                 disabled={false}
                 key="1"
-                variant={null}
               >
                 work
               </ListGroupItem>
@@ -199,7 +186,6 @@ exports[`<WorkExperience /> renders correctly 1`] = `
                 active={false}
                 disabled={false}
                 key="2"
-                variant={null}
               >
                 work
               </ListGroupItem>
@@ -212,6 +198,7 @@ exports[`<WorkExperience /> renders correctly 1`] = `
   <CarouselItem>
     <Card
       body={false}
+      bsPrefix="card work"
     >
       <CardBody>
         <Media>
@@ -232,7 +219,6 @@ exports[`<WorkExperience /> renders correctly 1`] = `
                 <FormattedMessage
                   defaultMessage="IBM"
                   id="work.ibm"
-                  values={Object {}}
                 />
               </CardLink>
             </CardTitle>
@@ -242,7 +228,6 @@ exports[`<WorkExperience /> renders correctly 1`] = `
               <FormattedMessage
                 defaultMessage="e-Commerce Java Development Support Intern"
                 id="work.ibm_intern"
-                values={Object {}}
               />
               <span
                 className="info-item"
@@ -252,7 +237,6 @@ exports[`<WorkExperience /> renders correctly 1`] = `
               <FormattedMessage
                 defaultMessage="May 2016 – Apr 2018"
                 id="work.ibm_work_period"
-                values={Object {}}
               />
             </CardSubtitle>
             <CardSubtitle
@@ -261,19 +245,16 @@ exports[`<WorkExperience /> renders correctly 1`] = `
               <FormattedMessage
                 defaultMessage="Toronto, Canada"
                 id="work.toronto_ca"
-                values={Object {}}
               />
             </CardSubtitle>
             <ListGroup
               className="ibm"
-              horizontal={null}
               variant="flush"
             >
               <ListGroupItem
                 active={false}
                 disabled={false}
                 key="0"
-                variant={null}
               >
                 work
               </ListGroupItem>
@@ -281,7 +262,6 @@ exports[`<WorkExperience /> renders correctly 1`] = `
                 active={false}
                 disabled={false}
                 key="1"
-                variant={null}
               >
                 work
               </ListGroupItem>
@@ -289,7 +269,6 @@ exports[`<WorkExperience /> renders correctly 1`] = `
                 active={false}
                 disabled={false}
                 key="2"
-                variant={null}
               >
                 work
               </ListGroupItem>
@@ -302,6 +281,7 @@ exports[`<WorkExperience /> renders correctly 1`] = `
   <CarouselItem>
     <Card
       body={false}
+      bsPrefix="card work"
     >
       <CardBody>
         <Media>
@@ -322,7 +302,6 @@ exports[`<WorkExperience /> renders correctly 1`] = `
                 <FormattedMessage
                   defaultMessage="Queen's University"
                   id="work.queensu"
-                  values={Object {}}
                 />
               </CardLink>
             </CardTitle>
@@ -332,7 +311,6 @@ exports[`<WorkExperience /> renders correctly 1`] = `
               <FormattedMessage
                 defaultMessage="Teaching Assistant"
                 id="work.queensu_ta"
-                values={Object {}}
               />
               <span
                 className="info-item"
@@ -342,7 +320,6 @@ exports[`<WorkExperience /> renders correctly 1`] = `
               <FormattedMessage
                 defaultMessage="Sep 2017 – Apr 2018"
                 id="work.queensu_work_period"
-                values={Object {}}
               />
             </CardSubtitle>
             <CardSubtitle
@@ -351,12 +328,10 @@ exports[`<WorkExperience /> renders correctly 1`] = `
               <FormattedMessage
                 defaultMessage="Kingston, Ontario"
                 id="work.kingston_on"
-                values={Object {}}
               />
             </CardSubtitle>
             <ListGroup
               className="queensu"
-              horizontal={null}
               variant="flush"
             />
           </MediaBody>

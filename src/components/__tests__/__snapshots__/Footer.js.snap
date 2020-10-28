@@ -30,7 +30,6 @@ exports[`<Footer /> renders correctly 1`] = `
           className="contact-item icon-mail-alt"
           disabled={false}
           href="mailto:hsuan9528@gmail.com"
-          type="button"
           variant="outline-light"
         >
           Email
@@ -40,7 +39,6 @@ exports[`<Footer /> renders correctly 1`] = `
           className="contact-item icon-linkedin"
           disabled={false}
           href="http://www.linkedin.com/in/erichsuanlee"
-          type="button"
           variant="outline-light"
         >
           LinkedIn
@@ -50,7 +48,6 @@ exports[`<Footer /> renders correctly 1`] = `
           className="contact-item icon-github"
           disabled={false}
           href="http://github.com/ericlee1995"
-          type="button"
           variant="outline-light"
         >
           GitHub
@@ -60,7 +57,6 @@ exports[`<Footer /> renders correctly 1`] = `
           className="contact-item icon-instagram"
           disabled={false}
           href="http://www.instagram.com/eric.hlee/"
-          type="button"
           variant="outline-light"
         >
           Instagram

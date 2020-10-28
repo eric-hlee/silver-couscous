@@ -68,7 +68,7 @@ export default function NavBar(props) {
         <Nav>
           <DropdownButton
             id="dropdown-item-button"
-            title={selectLanguageMapping[props.language]}
+            title={selectLanguageMapping[props.language] ?? 'Select langauge'}
             variant="secondary"
           >
             {['en', 'zh-CN', 'zh-TW'].map(getLanguageItem)}

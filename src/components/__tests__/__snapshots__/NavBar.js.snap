@@ -13,7 +13,6 @@ exports[`<NavBar /> renders correctly 1`] = `
     <FormattedMessage
       defaultMessage="Eric Lee"
       id="navbar.text"
-      values={Object {}}
     />
   </NavbarBrand>
   <NavbarToggle
@@ -33,7 +32,6 @@ exports[`<NavBar /> renders correctly 1`] = `
           <FormattedMessage
             defaultMessage="Portfolio"
             id="navbar.portfolio"
-            values={Object {}}
           />
         }
       >
@@ -51,7 +49,6 @@ exports[`<NavBar /> renders correctly 1`] = `
           <FormattedMessage
             defaultMessage="Echo Chat App"
             id="navbar.chat_app"
-            values={Object {}}
           />
         </DropdownItem>
         <DropdownDivider
@@ -70,7 +67,6 @@ exports[`<NavBar /> renders correctly 1`] = `
           <FormattedMessage
             defaultMessage="To be updated..."
             id="navbar.to_be_updated"
-            values={Object {}}
           />
         </DropdownItem>
       </NavDropdown>
@@ -79,15 +75,36 @@ exports[`<NavBar /> renders correctly 1`] = `
       fill={false}
       justify={false}
     >
-      <Button
-        active={false}
-        disabled={false}
-        onClick={[Function]}
-        type="button"
-        variant="dark"
+      <DropdownButton
+        id="dropdown-item-button"
+        title="Select langauge"
+        variant="secondary"
       >
-        English
-      </Button>
+        <DropdownItem
+          as="button"
+          disabled={false}
+          key="0"
+          onClick={[Function]}
+        >
+          English
+        </DropdownItem>
+        <DropdownItem
+          as="button"
+          disabled={false}
+          key="1"
+          onClick={[Function]}
+        >
+          简体中文
+        </DropdownItem>
+        <DropdownItem
+          as="button"
+          disabled={false}
+          key="2"
+          onClick={[Function]}
+        >
+          繁體中文
+        </DropdownItem>
+      </DropdownButton>
     </Nav>
   </NavbarCollapse>
 </Navbar>

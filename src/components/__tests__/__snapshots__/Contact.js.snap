@@ -10,7 +10,6 @@ exports[`<Contact /> renders correctly 1`] = `
     <FormattedMessage
       defaultMessage="Contact me"
       id="contact.contact_me"
-      values={Object {}}
     />
   </h1>
   <Form
@@ -34,7 +33,6 @@ exports[`<Contact /> renders correctly 1`] = `
             <FormattedMessage
               defaultMessage="Name"
               id="contact.name"
-              values={Object {}}
             />
           </FormLabel>
           <FormControl
@@ -51,7 +49,6 @@ exports[`<Contact /> renders correctly 1`] = `
             <FormattedMessage
               defaultMessage="Please enter your name."
               id="contact.invalid_name"
-              values={Object {}}
             />
           </Feedback>
         </Col>
@@ -63,7 +60,6 @@ exports[`<Contact /> renders correctly 1`] = `
             <FormattedMessage
               defaultMessage="Email address"
               id="contact.email"
-              values={Object {}}
             />
           </FormLabel>
           <FormControl
@@ -80,7 +76,6 @@ exports[`<Contact /> renders correctly 1`] = `
             <FormattedMessage
               defaultMessage="Please provide a valid email."
               id="contact.invalid_email"
-              values={Object {}}
             />
           </Feedback>
         </Col>
@@ -96,7 +91,6 @@ exports[`<Contact /> renders correctly 1`] = `
         <FormattedMessage
           defaultMessage="Message"
           id="contact.message"
-          values={Object {}}
         />
       </FormLabel>
       <FormControl
@@ -113,7 +107,6 @@ exports[`<Contact /> renders correctly 1`] = `
         <FormattedMessage
           defaultMessage="Please enter a message."
           id="contact.invalid_message"
-          values={Object {}}
         />
       </Feedback>
     </FormGroup>
@@ -127,12 +120,24 @@ exports[`<Contact /> renders correctly 1`] = `
       <FormattedMessage
         defaultMessage="Submit"
         id="contact.submit"
-        values={Object {}}
       />
     </Button>
   </Form>
-  <Bootstrap(Modal)
+  <Modal
+    animation={true}
+    autoFocus={true}
+    backdrop={true}
+    dialogAs={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "displayName": "ModalDialog",
+        "render": [Function],
+      }
+    }
+    enforceFocus={true}
+    keyboard={true}
     onHide={[Function]}
+    restoreFocus={true}
     show={false}
   >
     <ModalHeader
@@ -143,7 +148,6 @@ exports[`<Contact /> renders correctly 1`] = `
         <FormattedMessage
           defaultMessage="🎉 Success!"
           id="contact.success"
-          values={Object {}}
         />
       </ModalTitle>
     </ModalHeader>
@@ -152,7 +156,6 @@ exports[`<Contact /> renders correctly 1`] = `
         <FormattedMessage
           defaultMessage="If necessary, I will respond to you as soon as possible."
           id="contact.success_message"
-          values={Object {}}
         />
       </p>
     </ModalBody>
@@ -161,16 +164,14 @@ exports[`<Contact /> renders correctly 1`] = `
         active={false}
         disabled={false}
         onClick={[Function]}
-        type="button"
         variant="secondary"
       >
         <FormattedMessage
           defaultMessage="Close"
           id="contact.close"
-          values={Object {}}
         />
       </Button>
     </ModalFooter>
-  </Bootstrap(Modal)>
+  </Modal>
 </section>
 `;
