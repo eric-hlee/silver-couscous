@@ -34,7 +34,7 @@ export default function Home() {
               <FormattedMessage id="home.greeting" defaultMessage="Hello!" />
             </h1>
             <Image
-              src={require('../assets/images/profile.jpg')}
+              src="https://morning-garden-95959.herokuapp.com/images/profile.jpg"
               alt="Eric Lee"
               roundedCircle={true}
               height="144"
@@ -68,7 +68,7 @@ export default function Home() {
                   <Col className="img-col">
                     <Image
                       className="img-eric"
-                      src={require('../assets/images/eric.jpg')}
+                      src="https://morning-garden-95959.herokuapp.com/images/eric.jpg"
                       alt="Eric"
                       height="180"
                       width="171"

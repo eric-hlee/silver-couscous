@@ -24,7 +24,7 @@ export default function WorkExperience(props) {
                 width={64}
                 height={64}
                 className="mr-3"
-                src={require('../assets/images/conversocial.png')}
+                src="https://morning-garden-95959.herokuapp.com/images/conversocial.png"
                 alt="Conversocial logo"
               />
               <Media.Body>
@@ -76,7 +76,7 @@ export default function WorkExperience(props) {
                 width={64}
                 height={64}
                 className="mr-3"
-                src={require('../assets/images/verv.jpeg')}
+                src="https://morning-garden-95959.herokuapp.com/images/verv.jpeg"
                 alt="Verv logo"
               />
               <Media.Body>
@@ -125,7 +125,7 @@ export default function WorkExperience(props) {
                 width={64}
                 height={64}
                 className="mr-3"
-                src={require('../assets/images/ibm.png')}
+                src="https://morning-garden-95959.herokuapp.com/images/ibm.png"
                 alt="IBM logo"
               />
               <Media.Body>
@@ -174,7 +174,7 @@ export default function WorkExperience(props) {
                 width={64}
                 height={64}
                 className="mr-3"
-                src={require('../assets/images/queensu.png')}
+                src="https://morning-garden-95959.herokuapp.com/images/queensu.png"
                 alt="Queen's University logo"
               />
               <Media.Body>
