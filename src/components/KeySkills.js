@@ -25,9 +25,10 @@ export default function KeySkills() {
           <ListGroup horizontal="sm">
             {[
               'React',
-              'Redux',
               'React-Router',
               'React Intl',
+              'React Native',
+              'Redux',
               'Node.js',
               'Draft.js',
               'Jest',

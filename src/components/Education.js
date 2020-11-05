@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 
 export default function Education() {
   return (
-    <Card>
+    <Card className="education">
       <Card.Link href="http://www.queensu.ca/" target="_blank" rel="noopener">
         <Card.Img
           variant="top"
