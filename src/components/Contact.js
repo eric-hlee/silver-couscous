@@ -1,76 +1,76 @@
-import React, { useState } from 'react'
-import { FormattedMessage } from 'react-intl'
-import Button from 'react-bootstrap/Button'
-import Col from 'react-bootstrap/Col'
-import Form from 'react-bootstrap/Form'
-import Modal from 'react-bootstrap/Modal'
+import React, { useState } from 'react';
+import { FormattedMessage } from 'react-intl';
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
+import Modal from 'react-bootstrap/Modal';
 
 export default function Contact() {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
-  const [validated, setValidated] = useState(false)
-  const [show, setShow] = useState(false)
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [validated, setValidated] = useState(false);
+  const [show, setShow] = useState(false);
 
   const encode = (data) => {
     return Object.keys(data)
       .map(
         (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
       )
-      .join('&')
-  }
+      .join('&');
+  };
 
   const handleSubmit = (e) => {
-    const form = e.currentTarget
+    const form = e.currentTarget;
     if (form.checkValidity() === false) {
-      e.preventDefault()
-      e.stopPropagation()
+      e.preventDefault();
+      e.stopPropagation();
     }
 
-    setValidated(true)
+    setValidated(true);
 
-    const nameEmailInput = document.querySelector('#formNameEmail')
-    const messageInput = document.querySelector('#formMessage')
+    const nameEmailInput = document.querySelector('#formNameEmail');
+    const messageInput = document.querySelector('#formMessage');
     if (!nameEmailInput.checkValidity() || !messageInput.checkValidity()) {
-      return
+      return;
     }
 
-    const data = { name, email, message }
+    const data = { name, email, message };
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contact', ...data }),
     })
       .then(() => {
-        handleShow()
-        setName('')
-        setEmail('')
-        setMessage('')
-        setValidated(false)
+        handleShow();
+        setName('');
+        setEmail('');
+        setMessage('');
+        setValidated(false);
       })
-      .catch((error) => alert(error))
+      .catch((error) => alert(error));
 
-    e.preventDefault()
-  }
+    e.preventDefault();
+  };
 
   const handleChange = (e) => {
     switch (e.target.name) {
       case 'name':
-        setName(e.target.value)
-        break
+        setName(e.target.value);
+        break;
       case 'email':
-        setEmail(e.target.value)
-        break
+        setEmail(e.target.value);
+        break;
       case 'message':
-        setMessage(e.target.value)
-        break
+        setMessage(e.target.value);
+        break;
       default:
-        console.error('An error occurred while processing form data.')
+        console.error('An error occurred while processing form data.');
     }
-  }
+  };
 
-  const handleClose = () => setShow(false)
-  const handleShow = () => setShow(true)
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   return (
     <section className="contact-form">
@@ -85,9 +85,9 @@ export default function Contact() {
         validated={validated}
         onSubmit={handleSubmit}
       >
-        <Form.Group controlId="formNameEmail">
-          <Form.Row>
-            <Col>
+        <Form.Row>
+          <Col xs="auto">
+            <Form.Group controlId="formGroupName">
               <Form.Label>
                 <FormattedMessage id="contact.name" defaultMessage="Name" />
               </Form.Label>
@@ -105,8 +105,10 @@ export default function Contact() {
                   defaultMessage="Please enter your name."
                 />
               </Form.Control.Feedback>
-            </Col>
-            <Col>
+            </Form.Group>
+          </Col>
+          <Col xs="auto">
+            <Form.Group controlId="formGroupEmail">
               <Form.Label>
                 <FormattedMessage
                   id="contact.email"
@@ -127,10 +129,10 @@ export default function Contact() {
                   defaultMessage="Please provide a valid email."
                 />
               </Form.Control.Feedback>
-            </Col>
-          </Form.Row>
-        </Form.Group>
-        <Form.Group controlId="formMessage">
+            </Form.Group>
+          </Col>
+        </Form.Row>
+        <Form.Group controlId="formGroupMessage">
           <Form.Label>
             <FormattedMessage id="contact.message" defaultMessage="Message" />
           </Form.Label>
@@ -177,5 +179,5 @@ export default function Contact() {
         </Modal.Footer>
       </Modal>
     </section>
-  )
+  );
 }
