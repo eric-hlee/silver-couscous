@@ -1,7 +1,6 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import Badge from 'react-bootstrap/Badge';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
@@ -51,13 +50,6 @@ export default function Home() {
                 />
               </Badge>
             </h2>
-            <Button
-              variant="dark"
-              href="https://morning-garden-95959.herokuapp.com/resume"
-              className="icon-download"
-            >
-              <FormattedMessage id="home.resume" defaultMessage="Resume" />
-            </Button>
           </Jumbotron>
         </header>
         <section>
