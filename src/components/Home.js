@@ -117,7 +117,7 @@ export default function Home() {
                           },
                           {
                             id: 'home.life_as_dev_7',
-                            defaultMessage: 'Looking for new opportunities!',
+                            defaultMessage: 'Started a new job as an associate programmer at 25',
                           },
                         ].map(getLifeAsDevItem)}
                       </ul>
